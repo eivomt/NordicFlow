@@ -5,11 +5,51 @@ import tm3 from '../assets/3.png'
 import tm4 from '../assets/4.png'
 import tm5 from '../assets/5.png'
 
+import Employee from '../assets/components/employee'
+import Bio from '../assets/components/bio'
+
+import descriptionArray from '../assets/data/bio-description'
+import experienceArray from '../assets/data/bio-experience'
+
 class About extends Component {
+
+    constructor(props) {
+        super(props)
+
+        this.scrollRef = React.createRef()
+
+        this.state = {
+            bioOpen: false,
+        }
+    }
+
+    handleEmployeeClick = (props) => {
+        console.log(props)
+
+        this.setState({
+            bioOpen : true,
+            bioName : props.name,
+            bioPosition : props.position,
+            bioImg : props.img,
+            bioDescription : props.description,
+            bioPhone : props.phone,
+            bioEmail : props.email,
+            bioExperience : props.experience,
+            selected : props.number
+        })
+    }
+
+    scrollToBottom = () => {
+        this.end.scrollIntoView({ behavior: "smooth"})
+    }
+
+    componentDidUpdate() {
+        this.scrollToBottom()
+    }
 
     render() {
         return(
-            <div className="about-container">
+            <div className="about-container" ref={this.scrollRef}>
 
                 <section>
                     <div className="about-main">
@@ -23,78 +63,41 @@ class About extends Component {
                         <h4 className="subtitle">We know pumps, come pump with us</h4>
                         
                         <div className="about-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde tempora harum enim quam mollitia quos qui? Iure vitae sapiente quis doloribus harum ipsum vero?</p>
+                            <p>We genuinely believe that we can provide the best customer service & technical solutions
+                            at a very competitive price. Our team consist of people that have true understanding of the
+                            products that we deliver and believe in what we do.</p>
                         </div>
 
 
                         <h3 id="a-meet">MEET THE <span>TEAM</span></h3>
                         <div className="t-line" id="team-line"/>
+                        
 
                         <div className="team-container">
 
-                            <div className="team-bg"/>
+                            <Employee active={ this.state.selected === 1 ? true : false } number={1} img={tm1} name="Torjus Wæringsåsen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                            <div className="avatar">
-                                <div className="overlay-container">
-                                    <div className="team-img-overlay"/>
-                                </div>
-                                <img className="team-img" src={tm1} alt="teammember"/>
-                                <h3>Torjus Wæringsåsen</h3>
-                                <h4>Chief Operating Officer</h4>
-                            </div>
+                            <Employee active={ this.state.selected === 2 ? true : false } number={2} img={tm2} name="Johan Collett" position="Chief Technical Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[1]} experience={experienceArray[1]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                            <div className="avatar">
-                                <div className="overlay-container">
-                                    <div className="team-img-overlay"/>
-                                </div>
-                                <img className="team-img" src={tm2} alt=""/>
-                                <h3>Johan Collett</h3>
-                                <h4>Chief Technical Officer</h4>
-                            </div>
+                            <Employee active={ this.state.selected === 3 ? true : false } number={3} img={tm3} name="Christian Larsen" position="Head of Project Management" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[2]} experience={experienceArray[2]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                            <div className="avatar">
-                                <div className="overlay-container">
-                                    <div className="team-img-overlay"/>
-                                </div>
-                                <img className="team-img" src={tm3} alt=""/>
-                                <h3>Christian Larsen</h3>
-                                <h4>Head of Project Management</h4>
-                            </div>
+                            <Employee active={ this.state.selected === 4 ? true : false } number={4} img={tm4} name="Mark Tuinman" position="Head of Sales & Marketing" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[3]} experience={experienceArray[3]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                            <div className="avatar">
-                                <div className="overlay-container">
-                                    <div className="team-img-overlay"/>
-                                </div>
-                                <img className="team-img" src={tm4} alt=""/>
-                                <h3>Mark Tuinman</h3>
-                                <h4>Head of Sales & Marketing</h4>
-                            </div>
+                            <Employee active={ this.state.selected === 5 ? true : false } number={5} img={tm5} name="Per Einar Wethe" position="Chief Executive Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[4]} experience={experienceArray[4]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                            <div className="avatar">
-                                <div className="overlay-container">
-                                    <div className="team-img-overlay"/>
-                                </div>
-                                <img className="team-img" src={tm5} alt=""/>
-                                <h3>Per Einar Wethe</h3>
-                                <h4>Chief Executive Officer</h4>
-                            </div>
+                            <Employee active={ this.state.selected === 6 ? true : false } number={6} img={tm2} name="Eirik Ubøe" position="Chief Financial Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[5]} experience={experienceArray[5]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                            <div className="avatar">
-                                <div className="overlay-container">
-                                    <div className="team-img-overlay"/>
-                                </div>
-                                <img className="team-img" src={tm2} alt=""/>
-                                <h3>Eirik Ubøe</h3>
-                                <h4>Chief Financial Officer</h4>
-                            </div>
                         </div>
                     </div>
+                <div style={{ float:"left", clear: "both", marginTop: "-270px"}} ref={(el) => { this.end = el }}/>
                 </section>
 
                 <section id="bio-section">
-                    <div className="bio-container">
-                        
-                    </div>
+                    {this.state.bioOpen ? (
+                        <Bio name={this.state.bioName} position={this.state.bioPosition} img={this.state.bioImg} description={this.state.bioDescription} phone={this.state.bioPhone} email={this.state.bioEmail} experience={this.state.bioExperience}/>
+                        ) : (
+                        <div/>
+                    )}
                 </section>
             </div>
         )

@@ -1,0 +1,137 @@
+.contact-container {
+    width: 100vw;
+    padding-right: 128px;
+    padding-left: 128px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . . . . h h . . . . ."
+        ". . . . f f f f . . . ."
+        ". . . . l l l l . . . ."
+        "i i i i i i i i i i i i";
+
+    h2 {
+        grid-area: h;
+        text-align: center;
+        color: white;
+        font-weight: 100;
+        border-bottom: 1px solid $nf-blue;
+        margin-top: 32px;
+
+        span {
+            color: $nf-blue;
+        }
+    }
+}
+
+.form-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    grid-area: f;
+    width: 100%;
+    padding: 6.25% 32px;
+    background-color: $lg;
+
+    input {
+        width: 100%;
+        padding: .5rem;
+        padding-left: 0;
+        border-radius: 0;
+        background-color: $lg;
+        border: none;
+        border-bottom: 1px solid $ddw;
+        margin-bottom: 1rem;
+        color: $dw;
+    }
+
+    input:focus, textarea:focus {
+        outline-width: 0;
+    }
+
+    label {
+        font-weight: 100;
+        color: white;
+    }
+
+    textarea {
+        width: 100%;
+        background-color: $lg;
+        padding: .5rem;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $ddw;
+        color: $dw;
+        resize: none;
+    }
+}
+
+.contact-info-container {
+    margin-top: 16px;
+    grid-area: i;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h4, h3 {
+        text-align: center;
+    }
+    h4 {
+        color: $ddw;
+    }
+    h3 {
+        font-size: 16px;
+        color: $dw;
+
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+.team-link-container {
+    grid-area: l;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        color: $nf-blue;
+    }
+    p {
+        color: $dw;
+    }
+}
+
+#message {
+    height: 5rem;
+}
+
+#submit {
+    background-color: $bg;
+    border: 1px solid $nf-blue;
+    margin-top: 32px;
+    transition: .3s;
+}
+
+#submit:hover {
+    background-color: $nf-blue;
+}
+
+#contact-click {
+    cursor: pointer;
+
+    span {
+        color: $nf-blue;
+    }
+}

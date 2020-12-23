@@ -54,7 +54,7 @@
     padding-right: 42px;
 
     margin-top: 16px;
-    margin-bottom: 128px;
+    margin-bottom: 96px;
 
     p {
         color: $dw;
@@ -85,7 +85,7 @@
 }
 
 .team-container {
-    margin-top: 32px;
+    margin-top: 24px;
 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -165,4 +165,14 @@
 
         transition: .3s;
     }
+}
+
+.active {
+    .team-img-overlay {
+        opacity: .7;
+    }
+}
+
+.active-name {
+    color: $nf-blue;
 }

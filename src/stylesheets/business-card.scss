@@ -1,0 +1,16 @@
+.contact-cards-container {
+    width: 100vw;
+    padding-right: 128px;
+    padding-left: 128px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        "img img img img img img img img img img img img"
+        ". . . card card card card card card . . .";
+
+    .team-container {
+        grid-area: img;
+        margin-top: 64px;
+    }
+}

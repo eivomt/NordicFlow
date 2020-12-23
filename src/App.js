@@ -64,8 +64,8 @@ function App() {
         <div className="footer">
           <div className="f-line"></div>
 
-            <p className="f-name f-content">+47 98742683</p>
-            <p className="f-mail f-content">torjus@nordicflow.no</p>
+            <p className="f-name f-content">+47 95844449</p>
+            <p className="f-mail f-content">sales@nordicflow.no</p>
 
             <div className="f-bg"></div>
         </div>

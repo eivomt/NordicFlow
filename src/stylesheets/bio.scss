@@ -1,0 +1,122 @@
+.bio-main {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+
+    // padding-right: 128px;
+    // padding-left: 128px;
+    margin-left: 128px;
+    margin-right: 128px;
+    width: calc(100vw - 256px);
+    margin-top: 160px;
+
+
+}
+
+.bio-container {
+    grid-column-start: 2;
+    grid-column-end: 12;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+        ". . . . img img . . . . "
+        ". phone .  name name name name  . email . "
+        ". description description description . experience experience experience experience  ."
+    ;
+    background-color: $lg;
+    margin-bottom: 44px;
+    padding-bottom: 32px;
+
+
+    h4 {
+        color: $ddw;
+    }
+
+    p {
+        color: $dw;
+    }
+}
+
+.bio-img {
+    border-radius: 50%;
+    width: 192px;
+    margin-top: -96px;
+
+    border: 4px solid $nf-blue;
+
+    grid-area: img;
+    justify-self: center;
+
+    margin-bottom: 32px;
+}
+
+.bio-phone {
+    grid-area: phone;
+    align-self: center;
+}
+
+.bio-name-container {
+    grid-area: name;
+    justify-self: center;
+
+    h2, h4 {
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 100;
+        color: white;
+    }
+}
+
+.bio-email {
+    grid-area: email;
+    justify-self: right;
+    align-self: center;
+}
+
+.bio-description {
+    margin-top: 64px;
+    grid-area: description;
+    font-size: 14px;
+
+    p {
+        margin-bottom: 1rem;
+        color: white;
+    }
+}
+
+.bio-experience {
+    margin-top: 64px;
+    grid-area: experience;
+}
+
+.bio-job-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "company position position duration";
+
+    margin-bottom: 32px;
+
+    p {
+        font-size: 14px;
+        color: $dw;
+    }
+}
+
+.bio-company {
+    grid-area: company;
+}
+.bio-exp-position {
+    grid-area: position;
+    padding-left: 5.55%;
+    padding-right: 5.55%;
+    text-align: center;
+}
+.bio-duration {
+    grid-area: duration;
+    text-align: right;
+}
+
