@@ -7,10 +7,66 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: 
         "img img img img img img img img img img img img"
-        ". . . card card card card card card . . .";
+        ". . . . card card card card . . . .";
 
     .team-container {
         grid-area: img;
         margin-top: 64px;
     }
+
+    .business-card {
+        margin-top: 96px;
+        margin-bottom: 64px;
+        grid-area: card;
+        width: 75%;
+        justify-self: center;
+        background-color: $lg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 64px;
+
+        .name-title-container {
+            margin-top: 32px;
+        }
+
+        .mail-container, .phone-container {
+            margin-top: 32px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 100;
+            color: white;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 100;
+            color: $ddw;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: $ddw;
+        }
+
+        p {
+            font-size: 14px;
+            color: $dw;
+        }
+
+        * {
+            text-align: center;
+        }
+    }
+}
+
+.card-img {
+    background-color: $bg;
+    border: 4px solid $nf-blue;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    margin-top: -64px;
 }

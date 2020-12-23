@@ -1,0 +1,75 @@
+.wind-container {
+    // margin-top: 160px;
+    width: 100vw;
+    padding-right: 128px;
+    padding-left: 128px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . . . h h h h . . . ."
+        ". hvdc hvdc hvdc hvdc . . ft ft ft ft .";
+
+    span {
+        color: $nf-blue;
+    }
+
+    .title-container {
+        grid-area: h;
+        border-bottom: 1px solid $nf-blue;
+        margin-bottom: 64px;
+    }
+
+    h1 {
+        text-align: center;
+        color: $dw;
+        font-weight: 100;
+        font-size: 32px;
+        margin-top: 64px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 100;
+        color: $dw;
+
+        margin-left: -32px;
+        margin-bottom: 1rem;
+    }
+
+    .explanation-container {
+        height: 5rem;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: $ddw;
+    }
+
+    p, li {
+        color: $dw;
+        font-size: 14px;
+    }
+
+    li {
+        color: $nf-blue;
+    }
+
+    .hvdc-container, .floating-turbine-container {
+        padding: 32px;
+    }
+    
+    .hvdc-container {
+        grid-area: hvdc;
+    }
+    
+    .floating-turbine-container {
+        grid-area: ft;
+    }
+
+    ul {
+        margin-top: 8px;
+        margin-bottom: 16px;
+        list-style: none;
+        padding-left: 16px;
+    }
+}

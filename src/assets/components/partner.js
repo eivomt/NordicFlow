@@ -12,7 +12,7 @@ class Partner extends Component {
             for (let x in this.props.description) {
                 if (Array.isArray(this.props.description[x])) {
                     for (let y in this.props.description[x]) {
-                        ul.push(<li>{this.props.description[x][y]}</li>)
+                        ul.push(<li key={y}>{this.props.description[x][y]}</li>)
                     }
                     description.push(<ul key={x}>{ul}</ul>)
                 } else {

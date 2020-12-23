@@ -89,7 +89,7 @@ class About extends Component {
 
                         </div>
                     </div>
-                <div style={{ float:"left", clear: "both", marginTop: "-270px"}} ref={(el) => { this.end = el }}/>
+                <div style={{ float:"left", clear: "both", marginTop: "-308px"}} ref={(el) => { this.end = el }}/>
                 </section>
 
                 <section id="bio-section">

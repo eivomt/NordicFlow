@@ -21,6 +21,18 @@ function App() {
     <HashRouter>
       <div className="App">
 
+    
+
+        <div className="content">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/partners" component={Partners} />
+          <Route exact path="/wind" component={Wind} />
+          <Route exact path="/hydrogen" component={Hydrogen} />
+          <Route exact path="/oil" component={Oil} />
+        </div>
+
         <div className="nav-container">
           <div className="line-container">
             <div className="line"/>
@@ -47,18 +59,10 @@ function App() {
             </NavLink>
 
             <div className="line"></div>
-            <div className="nav-bg"></div>
+            <div className="nav-bg">
+              <div className="bg"></div>
+            </div>
           </nav>
-        </div>
-
-        <div className="content">
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/partners" component={Partners} />
-          <Route exact path="/wind" component={Wind} />
-          <Route exact path="/hydrogen" component={Hydrogen} />
-          <Route exact path="/oil" component={Oil} />
         </div>
 
         <div className="footer">
@@ -67,7 +71,9 @@ function App() {
             <p className="f-name f-content">+47 95844449</p>
             <p className="f-mail f-content">sales@nordicflow.no</p>
 
-            <div className="f-bg"></div>
+            <div className="f-bg">
+              <div className="bg"></div>
+            </div>
         </div>
       </div>
     </HashRouter>

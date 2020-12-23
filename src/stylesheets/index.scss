@@ -14,6 +14,8 @@
 }
 
 $nf-blue: #55B4D0;
+$nf-blue-opacity-1: rgba(85, 180, 208, 1);
+$nf-blue-opacity-0: rgba(85, 180, 208, 0);
 $bg: #363535;
 $lg: #414141;
 $ddw: #919191;
@@ -50,3 +52,6 @@ h4 {
 @import './partners.scss';
 @import './contact.scss';
 @import './business-card.scss';
+@import './wind.scss';
+@import './hydrogen.scss';
+@import './oil-gas.scss';

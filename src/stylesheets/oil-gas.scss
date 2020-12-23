@@ -1,0 +1,73 @@
+.oil-container {
+    width: 100vw;
+    padding-right: 128px;
+    padding-left: 128px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . . . h h h h . . . ."
+        ". . . . s s s s . . . ."
+        ". . . s2 s2 s2 . img img . . ."
+        ". . . p p p . img img . . .";
+    
+    .title-container {
+        margin-top: 64px;
+        grid-area: h;
+        border-bottom: 1px solid $nf-blue;
+
+        h1 {
+            text-align: center;
+            color: $dw;
+            font-size: 32px;
+            font-weight: 100;
+        }
+    }
+
+    span {
+        color: $nf-blue;
+    }
+
+    h3 {
+        grid-area: s;
+        margin-top: 8px;
+
+        font-size: 16px;
+        color: $ddw;
+        text-align: center;
+    }
+
+    p {
+        grid-area: s2;
+
+        font-size: 14px;
+        color: $dw;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        grid-area: p;
+
+        list-style: none;
+        padding-left: 16px;
+    }
+
+    li {
+        font-size: 14px;
+        color: $ddw;
+        margin-bottom: .25rem;
+    }
+
+    li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .img-placeholder {
+        border: 1px solid $dw;
+        height: calc(100% - 32px);
+        width: 100%;
+        grid-area: img;
+        margin-top: 32px;
+    }
+}

@@ -14,26 +14,54 @@ import experienceArray from '../data/bio-experience'
 import BusinessCard from './business-card'
 
 class CardSelector extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            cardSelected : true,
+            cardName : "Torjus Wæringsåsen",
+            cardPosition : "Chief Operating Officer",
+            cardMail : "tw@nordicflow.no",
+            cardPhone : "+47 41522557",
+            cardImg : tm1,
+            selected : 1
+        }
+    }
+
+    handleEmployeeClick = (props) => {
+        this.setState({
+            cardSelected : true,
+
+            cardName : props.name,
+            cardPosition : props.position,
+            cardMail : props.email,
+            cardPhone : props.phone,
+            cardImg : props.img,
+            selected : props.number
+        })
+    }
 
     render() {
         return(
             <div className="contact-cards-container">
 
                 <div className="team-container">
-                    <Employee  number={1} img={tm1} name="Torjus Wæringsåsen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 1 ? true : false }  number={1} img={tm1} name="Torjus Wæringsåsen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                    <Employee  number={2} img={tm2} name="Johan Collett" position="Chief Technical Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[1]} experience={experienceArray[1]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 2 ? true : false }  number={2} img={tm2} name="Johan Collett" position="Chief Technical Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[1]} experience={experienceArray[1]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                    <Employee  number={3} img={tm3} name="Christian Larsen" position="Head of Project Management" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[2]} experience={experienceArray[2]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 3 ? true : false }  number={3} img={tm3} name="Christian Larsen" position="Head of Project Management" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[2]} experience={experienceArray[2]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                    <Employee  number={4} img={tm4} name="Mark Tuinman" position="Head of Sales & Marketing" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[3]} experience={experienceArray[3]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 4 ? true : false }  number={4} img={tm4} name="Mark Tuinman" position="Head of Sales & Marketing" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[3]} experience={experienceArray[3]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                    <Employee  number={5} img={tm5} name="Per Einar Wethe" position="Chief Executive Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[4]} experience={experienceArray[4]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 5 ? true : false }  number={5} img={tm5} name="Per Einar Wethe" position="Chief Executive Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[4]} experience={experienceArray[4]} handleEmployeeClick={this.handleEmployeeClick}/>
 
-                    <Employee  number={6} img={tm2} name="Eirik Ubøe" position="Chief Financial Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[5]} experience={experienceArray[5]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 6 ? true : false }  number={6} img={tm2} name="Eirik Ubøe" position="Chief Financial Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[5]} experience={experienceArray[5]} handleEmployeeClick={this.handleEmployeeClick}/>
                 </div>
 
-                <BusinessCard></BusinessCard>
+                {this.state.cardSelected ? (<BusinessCard name={this.state.cardName} position={this.state.cardPosition} email={this.state.cardMail} phone={this.state.cardPhone}
+                img={this.state.cardImg}/>) : (<div/>)}
+
 
             </div>
         )

@@ -16,7 +16,6 @@
         text-align: center;
         color: white;
         font-weight: 100;
-        border-bottom: 1px solid $nf-blue;
         margin-top: 32px;
 
         span {
@@ -33,7 +32,7 @@
     padding: 6.25% 32px;
     background-color: $lg;
 
-    input {
+    input, select {
         width: 100%;
         padding: .5rem;
         padding-left: 0;
@@ -45,8 +44,17 @@
         color: $dw;
     }
 
-    input:focus, textarea:focus {
+    input:focus, textarea:focus, select:focus {
         outline-width: 0;
+    }
+    
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        background-color: $lg !important;
+        appearance: none !important;
+        color: $dw !important;
     }
 
     label {
@@ -99,18 +107,27 @@
 
 .team-link-container {
     grid-area: l;
-    margin-top: 8px;
-    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    padding-bottom: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid $nf-blue-opacity-0;
+    transition: .2s;
 
     h3 {
         color: $nf-blue;
     }
     p {
         color: $dw;
+        font-weight: 100;
+        font-size: 18px;
     }
+}
+
+.team-link-container:hover {
+    border-bottom: 1px solid $nf-blue-opacity-1;
 }
 
 #message {

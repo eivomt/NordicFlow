@@ -2,9 +2,28 @@ import React, {Component} from 'react'
 import CardSelector from '../assets/components/card-selector'
 
 class Contact extends Component {
+    constructor(props) {
+        super(props)
+
+        this.scrollRef = React.createRef()
+
+        this.state = {
+            cardsOpened : false,
+        }
+    }
 
     handleParticularClick = () => {
-        console.log("we did it")
+        this.setState({
+            cardsOpened : true
+        })
+    }
+
+    scrollToBottom = () => {
+        this.end.scrollIntoView({ behavior: "smooth"})
+    }
+
+    componentDidUpdate() {
+        this.scrollToBottom()
     }
 
     render() {
@@ -18,21 +37,20 @@ class Contact extends Component {
                         <h2>GET IN <span>TOUCH</span></h2>
 
                         <div className="form-container">
-                            <form action="" id="mail-form">
+                            <form action="" id="mail-form" autoComplete="off">
                                 <label htmlFor="mail">Your email</label>
                                 <br/>
                                 <input type="email" name="mail" id="mail"/>
                                 <br/>
                                 <label htmlFor="subject">Subject</label>
                                 <br/>
-                                <input list="subjects" name="subject" id="subject"/>
-                                <datalist id="subjects">
-                                    <option value="After Sale"/>
-                                    <option value="Service"/>
-                                    <option value="New sale"/>
-                                    <option value="Claim"/>
-                                    <option value="Other"/>
-                                </datalist>
+                                <select name="subject" id="subject">
+                                    <option value="Other">Other</option>
+                                    <option value="After Sale">After Sale</option>
+                                    <option value="Service">Service</option>
+                                    <option value="New sale">New Sale</option>
+                                    <option value="Claim">Claim</option>
+                                </select>
                                 <br/>
                                 <label htmlFor="message">Message</label>
                                 <br/>
@@ -65,10 +83,12 @@ class Contact extends Component {
                 </section>
 
                 <section id="contact-particular">
+                    {this.state.cardsOpened ? (<CardSelector/>) : (<div/>)}
 
-                    <CardSelector></CardSelector>
+                    
 
                 </section>
+                <div style={{ float:"left", clear: "both", marginTop: "-0px"}} ref={(el) => { this.end = el }}/>
             </div>
         )
     }
