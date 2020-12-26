@@ -88,7 +88,7 @@ class MobileNavigation extends Component {
 
                     <div id="mobile-nav-line-info" className="mobile-nav-line"/>
 
-                    <div className="mobile-nav-info">
+                    {/* <div className="mobile-nav-info">
                         <p>sales@nordicflow.no</p>
                     </div>
                     <div className="mobile-nav-info">
@@ -96,7 +96,7 @@ class MobileNavigation extends Component {
                     </div>
                     <div className="mobile-nav-info">
                         <p>+47 95844449</p>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
