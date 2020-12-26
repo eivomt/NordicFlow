@@ -86,9 +86,9 @@ class MobileNavigation extends Component {
                         <p>Oil</p>
                     </NavLink>
 
-                    <div id="mobile-nav-line-info" className="mobile-nav-line"/>
+                    {/* <div id="mobile-nav-line-info" className="mobile-nav-line"/>
 
-                    {/* <div className="mobile-nav-info">
+                    <div className="mobile-nav-info">
                         <p>sales@nordicflow.no</p>
                     </div>
                     <div className="mobile-nav-info">
