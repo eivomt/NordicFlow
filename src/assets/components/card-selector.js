@@ -19,12 +19,12 @@ class CardSelector extends Component {
 
         this.state = {
             cardSelected : true,
-            cardName : "Torjus Wæringsåsen",
-            cardPosition : "Chief Operating Officer",
+            cardName : "Johan Collett",
+            cardPosition : "Chief Technical Officer",
             cardMail : "tw@nordicflow.no",
             cardPhone : "+47 41522557",
-            cardImg : tm1,
-            selected : 1
+            cardImg : tm2,
+            selected : 2
         }
     }
 

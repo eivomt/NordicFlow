@@ -47,6 +47,14 @@ class About extends Component {
         this.scrollToBottom()
     }
 
+    componentDidMount() {
+        let list = document.querySelector(".scrollable-list")
+        let viewportWidth = window.innerWidth
+        setTimeout(() => {
+            list.scrollLeft = viewportWidth/2
+        }, 400)
+    }
+
     render() {
         return(
             <div className="about-container" ref={this.scrollRef}>

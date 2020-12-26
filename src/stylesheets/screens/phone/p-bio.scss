@@ -12,11 +12,6 @@
         background-color: $lg;
     }
 
-    .bio-exp-position {
-        padding-left: .75rem;
-        padding-right: .75rem;
-    }
-
     .bio-img {
         width: 192px;
         margin-left: calc(50% - 97px);
@@ -36,5 +31,46 @@
         p {
             color: $dw;
         }
+    }
+
+    .bio-name-container {
+        h4 {
+            font-size: 16px;
+        }
+    }
+
+    .bio-job-container {
+        grid-template-areas: 
+            "company company company company"
+            "position position duration duration";
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $bg;
+
+        .bio-company {
+            justify-self: center;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: $dw;
+            font-size: 16px;
+        }
+
+        .bio-exp-position {
+            justify-self: left;
+            text-align: left;
+        }
+
+        .bio-exp-position, .bio-duration {
+            color: $ddw;
+        }
+    }
+
+    .bio-experience-title {
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+        padding-bottom: 1rem;
+        font-size: 1.5em;
+        color: $ddw;
+        border-bottom: 1px solid $bg;
     }
 }

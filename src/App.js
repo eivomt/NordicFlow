@@ -10,6 +10,8 @@ import Oil from './pages/oil-gas'
 
 import Logo2 from './assets/logo2'
 
+import MobileNavigation from './assets/components/mobile-navigation'
+
 import {
   Route,
   NavLink,
@@ -18,26 +20,9 @@ import {
 
 function App() {
 
-  let showMobileMenu = () => {
-
-    let menu = document.querySelector(".menu")
-    let content = document.querySelector(".content")
-
-    if (menu.classList.contains("menu-hidden")) {
-      menu.classList.remove("menu-hidden")
-      content.classList.add("content-hidden")
-
-    } else {
-      menu.classList.add("menu-hidden")
-      content.classList.remove("content-hidden")
-    }
-  }
-
   return (
     <HashRouter>
       <div className="App">
-
-    
 
         <div className="content">
           <Route exact path="/" component={Home} />
@@ -63,39 +48,7 @@ function App() {
               <h1 className="mobile-nav-text">NORDIC <span>FLOW</span></h1>
             </NavLink>
 
-            <div className="mobile-menu" onClick={() => showMobileMenu()}>
-              
-              <div className="menu menu-hidden">
-                <NavLink
-                to="/about" replace className="mobile-nav-link mobile-about-link">
-                  <p>About</p>
-                </NavLink>
-
-                <NavLink
-                to="/contact" replace className="mobile-nav-link mobile-contact-link">
-                  <p>Contact</p>
-                </NavLink>
-
-                <NavLink
-                to="/partners" replace className="mobile-nav-link mobile-partner-link">
-                  <p>Partners</p>
-                </NavLink>
-
-                <div className="mobile-nav-line"/>
-
-                <NavLink className="mobile-nav-link mobile-wind" to="/wind">
-                    <p>Wind</p>
-                </NavLink>
-
-                <NavLink className="mobile-nav-link mobile-hydrogen" to="/hydrogen">
-                    <p>Hydrogen</p>
-                </NavLink>
-
-                <NavLink className="mobile-nav-link mobile-oil" to="/oil">
-                    <p>Oil</p>
-                </NavLink>
-              </div>
-            </div>
+            <MobileNavigation/>
 
             <NavLink
             to="/about" replace className="nav-link about-link">

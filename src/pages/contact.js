@@ -16,6 +16,12 @@ class Contact extends Component {
         this.setState({
             cardsOpened : true
         })
+        setTimeout(() => {
+            let list = document.querySelector(".scrollable-list")
+        let viewportWidth = window.innerWidth
+        list.scrollLeft = viewportWidth/2
+        }, 400)
+        
     }
 
     scrollToBottom = () => {

@@ -5,7 +5,7 @@
 
         grid-template-areas: 
             ". . h h h h h h h h . ."
-            ". f f f f f f f f f f ."
+            "f f f f f f f f f f f f"
             ". . l l l l l l l l . ."
             ". . i i i i i i i i . .";
     }
@@ -39,7 +39,7 @@
     }
 
     #contact-scroll-ref {
-        margin-top: -710px !important;
+        margin-top: -730px !important;
     }
 
     .contact-info-container {

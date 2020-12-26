@@ -33,6 +33,7 @@ class Bio extends Component {
                     <div className="bio-description">
                         {description}
                     </div>
+                    <h3 className="bio-experience-title">Experience</h3>
                     <div className="bio-experience">
                         {jobs}
                     </div>

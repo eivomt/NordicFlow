@@ -86,11 +86,25 @@
                     background-color: $ddw;
                     margin-bottom: 1rem;
                 }
+
+                #mobile-nav-line-info {
+                    margin-top: 20vh;
+                }
+
+                .mobile-nav-info {
+                    color: $ddw;
+                    font-size: 12px;
+                    margin-bottom: 1rem;
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
     
                 .mobile-wind, .mobile-hydrogen, .mobile-oil {
     
                     p {
-                        color: $ddw;
+                        color: $lg;
                     }
                 }
             }
