@@ -24,11 +24,11 @@ class Bio extends Component {
             <div className="bio-main">
                 <div className="bio-container">
                     <img src={this.props.img} alt="employee" className="bio-img"/>
-                    <h4 className="bio-phone">{this.props.phone}</h4>
                     <div className="bio-name-container">
                         <h2>{this.props.name}</h2>
                         <h4>{this.props.position}</h4>
                     </div>
+                    <h4 className="bio-phone">{this.props.phone}</h4>
                     <h4 className="bio-email">{this.props.email}</h4>
                     <div className="bio-description">
                         {description}

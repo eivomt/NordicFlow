@@ -1,17 +1,19 @@
 @media only screen and (max-width: 600px) {
-    .nav-container {
-        padding-top: 32px;
+
+    .content {
+        margin-top: 64px;
+
+        transition: .4s;
     }
 
-    .line-container {
-        top: 32px;
-        width: 100%;
-        left: 0;
-
-        .line {
-            width: 100%;
-        }
+    .content-hidden {
+        opacity: .1;
     }
+
+    #scroll-ref {
+        margin-top: -128px !important;
+    }
+
 
     .about-main {
         padding-right: 32px;
@@ -19,21 +21,19 @@
 
         grid-template-rows: 32px repeat(6, auto [row]);
 
+        .subtitle {
+            grid-column-start: col 1;
+            grid-column-end: col 11;
+        }
+
         .about-title {
             justify-content: space-between;
             grid-column-start:  1;
             grid-column-end: col 12;
 
             .t-line {
-                // display: none;
                 width: 40px;
-                // margin-right: 8px;
             }
-
-            // .t-line:last-of-type {
-            //     margin-right: 0;
-            //     margin-left: 8px;
-            // }
 
             h2 {
                 font-size: 28px;
@@ -50,12 +50,27 @@
             padding: 24px;
             padding-left: 24px;
             padding-right: 24px;
-            margin-bottom: 40px;
+            margin-bottom: 64px;
+            margin-top: 32px;
+            margin-left: -32px;
+            margin-right: -32px;
         }
 
         #a-meet, #team-line {
             grid-column-start: col 2;
             grid-column-end: col 10;
         }
+
+        #team-line {
+            height: 2px;
+        }
+    }
+
+    .scrollable-list {
+        display: block;
+    }
+
+    .team-container {
+        display: none;
     }
 }

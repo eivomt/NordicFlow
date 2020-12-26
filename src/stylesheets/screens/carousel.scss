@@ -1,0 +1,46 @@
+.scrollable-list {
+    grid-row: row 6;
+    grid-column-start: 1;
+    grid-column-end: col 12;
+    list-style: none;
+    height: 144px;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-left: -32px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+    scroll-behavior: smooth;
+
+    li {
+        border-radius: 50%; 
+        display: inline-block;
+        width: 72px;
+        height: 100px;
+        margin-right: 64px;
+
+        .overlay-container, .team-img-overlay {
+            height: 72px;
+            width: 72px;
+        }
+
+        h4 {
+            width: 104px;
+            white-space: initial;
+        }
+
+        .l-name {
+            display: none;
+        }
+
+        .team-img {
+            height: 72px;
+            width: 72px;
+        }
+    }
+
+    li:nth-of-type(1) {
+        margin-left: 152px;
+    }
+}

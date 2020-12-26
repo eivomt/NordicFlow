@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    .partners-container {
+        padding-right: 0;
+        padding-left: 0;
+
+        margin-bottom: 32px;
+
+        grid-template-areas: 
+            ". . h h h h h h h h . ."
+            ". p p p p p p p p p p .";
+    }
+
+    .partners-background {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .partner-container {
+        margin-top: 128px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-areas: 
+            ". . . logo logo logo logo . . ."
+            "name name name name name name name name name name"
+            "desc desc desc desc desc desc desc desc desc desc";
+
+        h3 {
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .partner-description {
+            line-height: 1.5;
+        }
+
+        img {
+            border: 4px solid $nf-blue;
+        }
+    }
+
+    .partner-container:nth-child(1) {
+        margin-top: 32px;
+    }
+}

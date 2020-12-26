@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+    .wind-container {
+        padding-left: 0;
+        padding-right: 0;
+
+        margin-bottom: 64px;
+
+        grid-template-areas: 
+            ". . h h h h h h h h . ."
+            ". hvdc hvdc hvdc hvdc hvdc hvdc hvdc hvdc hvdc hvdc ."
+            ". ft ft ft ft ft ft ft ft ft ft .";
+
+        .title-container {
+            margin-bottom: 32px;
+        }
+
+        .hvdc-container {
+            padding-bottom: 16px;
+        }
+    }
+
+}

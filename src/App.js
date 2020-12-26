@@ -17,6 +17,22 @@ import {
 } from "react-router-dom";
 
 function App() {
+
+  let showMobileMenu = () => {
+
+    let menu = document.querySelector(".menu")
+    let content = document.querySelector(".content")
+
+    if (menu.classList.contains("menu-hidden")) {
+      menu.classList.remove("menu-hidden")
+      content.classList.add("content-hidden")
+
+    } else {
+      menu.classList.add("menu-hidden")
+      content.classList.remove("content-hidden")
+    }
+  }
+
   return (
     <HashRouter>
       <div className="App">
@@ -42,6 +58,44 @@ function App() {
             exact to="/" replace className="home-link">
               <Logo2/>
             </NavLink>
+
+            <NavLink exact to="/" replace className="mobile-nav-text">
+              <h1 className="mobile-nav-text">NORDIC <span>FLOW</span></h1>
+            </NavLink>
+
+            <div className="mobile-menu" onClick={() => showMobileMenu()}>
+              
+              <div className="menu menu-hidden">
+                <NavLink
+                to="/about" replace className="mobile-nav-link mobile-about-link">
+                  <p>About</p>
+                </NavLink>
+
+                <NavLink
+                to="/contact" replace className="mobile-nav-link mobile-contact-link">
+                  <p>Contact</p>
+                </NavLink>
+
+                <NavLink
+                to="/partners" replace className="mobile-nav-link mobile-partner-link">
+                  <p>Partners</p>
+                </NavLink>
+
+                <div className="mobile-nav-line"/>
+
+                <NavLink className="mobile-nav-link mobile-wind" to="/wind">
+                    <p>Wind</p>
+                </NavLink>
+
+                <NavLink className="mobile-nav-link mobile-hydrogen" to="/hydrogen">
+                    <p>Hydrogen</p>
+                </NavLink>
+
+                <NavLink className="mobile-nav-link mobile-oil" to="/oil">
+                    <p>Oil</p>
+                </NavLink>
+              </div>
+            </div>
 
             <NavLink
             to="/about" replace className="nav-link about-link">

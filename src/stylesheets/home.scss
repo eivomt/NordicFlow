@@ -2,7 +2,6 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr [home-row]);
     grid-template-columns: repeat(12, 1fr [home-col]);
-    column-gap: 16px;
     padding-right: 128px;
     padding-left: 128px;
 

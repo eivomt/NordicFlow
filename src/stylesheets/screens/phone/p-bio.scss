@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+    .bio-container {
+        display: block;
+        margin-bottom: 0;
+    }
+
+    .bio-main {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 92px;
+        width: 100vw;
+        background-color: $lg;
+    }
+
+    .bio-exp-position {
+        padding-left: .75rem;
+        padding-right: .75rem;
+    }
+
+    .bio-img {
+        width: 192px;
+        margin-left: calc(50% - 97px);
+        position: static;
+    }
+
+    .bio-email {
+        margin-top: -1.15rem;
+    }
+
+    .bio-phone {
+        text-align: right;
+        margin-top: 1rem;
+    }
+
+    .bio-description {
+        p {
+            color: $dw;
+        }
+    }
+}

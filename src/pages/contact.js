@@ -88,7 +88,7 @@ class Contact extends Component {
                     
 
                 </section>
-                <div style={{ float:"left", clear: "both", marginTop: "-0px"}} ref={(el) => { this.end = el }}/>
+                <div id="contact-scroll-ref" style={{ float:"left", clear: "both", marginTop: "-0px"}} ref={(el) => { this.end = el }}/>
             </div>
         )
     }

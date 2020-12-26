@@ -1,0 +1,121 @@
+@media only screen and (max-width: 600px) {
+
+    .nav-container {
+        padding-top: 8px;
+    }
+
+    .line-container {
+        top: 72px;
+        width: 100%;
+        left: 0;
+        height: 2px;
+
+        .line {
+            width: 100%;
+            height: 0px;
+        }
+    }
+
+    nav {
+        padding-left: 32px;
+        padding-right: 32px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-bg {
+            top: -57px;
+            margin-left: 0px;
+            width: 100vw;
+
+            .bg {
+                background-color: $lg;
+                border-bottom: 2px solid $bg;
+            }
+        }
+
+        .home-link {
+            width: 36px;
+        }
+
+        svg {
+            height: 36px !important;
+        }
+
+        .mobile-menu {
+            display: block;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            background-color: $bg;
+            z-index: 3;
+
+            grid-column: col 11;
+
+            .menu-hidden {
+                margin-left: 68px !important;
+            }
+    
+    
+            .menu {
+                width: 50vw;
+                height: calc(100vh - 89px);
+    
+                background-color: $dw;
+                margin-top: 45px;
+                margin-left: calc(-50vw + 68px);
+                padding-left: 2rem;
+                padding-top: calc(52px);
+                border-left: 4px solid $nf-blue;
+    
+                transition: .4s;
+            
+    
+                a {
+                    p {
+                        margin-bottom: 1rem;
+                        color: $bg;
+    
+                    }
+                }
+    
+                .mobile-nav-line {
+                    width: 80%;
+                    height: 1px;
+                    background-color: $ddw;
+                    margin-bottom: 1rem;
+                }
+    
+                .mobile-wind, .mobile-hydrogen, .mobile-oil {
+    
+                    p {
+                        color: $ddw;
+                    }
+                }
+            }
+        }
+
+        .mobile-nav-text {
+            display: block;
+            z-index: 3;
+
+            color: $dw;
+            font-weight: 100;
+            font-size: 16px;
+
+            span {
+                color: $nf-blue;
+            }
+        }
+
+        .about-link, .contact-link, .partner-link, .line {
+            display: none;
+        }
+
+    }
+
+    .cls-1{
+        fill: $lg;
+    }
+}

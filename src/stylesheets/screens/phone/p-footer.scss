@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 0;
+        height: 36px;
+
+        .f-name {
+            display: none;
+        }
+
+        .f-line {
+            height: 0px;
+        }
+
+        .f-mail {
+            grid-column-start: footer-col 3;
+            grid-column-end: footer-col 9;
+
+            margin-top: .5rem;
+        }
+
+        .f-bg {
+
+            .bg {
+                background-color: $bg;
+                border-top: 2px solid $lg;
+            }
+        }
+    }
+}
