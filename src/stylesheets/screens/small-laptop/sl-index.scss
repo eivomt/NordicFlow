@@ -3,6 +3,27 @@
         padding-left: 64px;
         padding-right: 64px;
     }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    a {
+        p {
+            font-size: 18px !important;
+        }
+    }
+
+    .bg-img, .bg-img-overlay {
+        width: calc(100vw - 128px);
+        left: 64px;
+    }
 }
 
 @import './sl-nav.scss';
+@import './sl-about.scss';
+@import './sl-contact.scss';
+@import './sl-hydrogen.scss';
+@import './sl-oil.scss';
+@import './sl-partners.scss';
+@import './sl-wind.scss';

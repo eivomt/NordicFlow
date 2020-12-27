@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import oilImg from '../assets/oil.png'
 
 class Hydrogen extends Component {
 
@@ -20,6 +21,9 @@ class Hydrogen extends Component {
                         <li>Electropolished wet parts in all pump equipment</li>
                     </ul>
                 </div>
+
+                <img className="bg-img" id="oil-bg" src={oilImg} alt="background"/>
+                <div className="bg-img-overlay"/>
             </div>
         )
     }

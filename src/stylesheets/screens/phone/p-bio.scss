@@ -7,7 +7,8 @@
     .bio-main {
         margin-left: 0;
         margin-right: 0;
-        margin-top: 92px;
+        margin-top: 128px;
+        margin-bottom: 64px;
         width: 100vw;
         background-color: $lg;
     }
@@ -65,9 +66,7 @@
     }
 
     .bio-experience-title {
-        text-align: center;
-        margin-top: 3rem;
-        margin-bottom: -2rem;
+        margin-bottom: 2rem;
         padding-bottom: 1rem;
         font-size: 1.5em;
         color: $ddw;

@@ -30,7 +30,6 @@
 
 .partners-background {
     grid-area: p;
-    // background-color: $lg;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -83,7 +82,7 @@
         }
 
         li {
-            color: white;
+            color: $nf-blue;
             font-size: 14px;
             list-style: none;
             margin-bottom: .5rem;

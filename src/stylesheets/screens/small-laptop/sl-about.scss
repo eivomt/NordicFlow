@@ -1,0 +1,105 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-main {
+        grid-template-rows: 128px repeat(6, auto [row]);
+    }
+
+    .about-title {
+        justify-content: center;
+        grid-column-start: col 1;
+        grid-column-end: col 11;
+
+        h2 {
+            text-align: center;
+            font-size: 48px;
+            // font-family: 'Roboto', sans-serif;
+            letter-spacing: .8rem;
+            margin-right: -.8rem;
+
+            span {
+                // font-family: 'Lato', sans-serif;
+            }
+        }
+
+        
+        .t-line {
+            display: none;
+        }
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    #a-meet {
+        font-size: 32px;
+    }
+
+    .team-container {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 64px;
+        margin-top: 64px;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            text-align: center;
+            width: 75%;
+        }
+
+        .team-img, .team-img-overlay {
+            height: 108px;
+            width: 108px;
+        }
+
+        .overlay-container {
+            height: 108px;
+        }
+    }
+
+    .about-text {
+        grid-column-start: col 2;
+        grid-column-end: col 10;
+        padding: 36px;
+        margin-top: 36px;
+        margin-bottom: 256px;
+    }
+
+    .bio-main {
+        margin-left: 32px;
+        margin-right: 32px;
+        width: calc(100vw - 64px);
+        margin-top: 192px;
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        .bio-img {
+            position: static;
+            z-index: inherit;
+        }
+
+        .bio-container {
+            grid-template-areas: 
+                ". phone phone . img img . email email ."
+                ". . . name name name name . . ."
+                ". description description description description description description description description ."
+                ". . . et et et et . . ."
+                ".  experience experience experience experience experience experience experience experience .";
+
+            .bio-experience-title {
+                grid-area: et;
+            }
+        }
+    }
+}

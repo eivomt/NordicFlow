@@ -1,6 +1,15 @@
+// Montserrat
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
+// Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Lato
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// Open Sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     -moz-box-sizing: border-box; 
@@ -12,6 +21,7 @@
 
      font-family: 'Montserrat', sans-serif;
 }
+
 
 p {
     line-height: 1.5;
@@ -47,6 +57,25 @@ h4 {
     color: $dw;
 }
 
+.bg-img {
+ 
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.04), rgba(0,0,0,.04), rgba(0,0,0,.075));
+    object-fit: cover;
+}
+
+.bg-img-overlay {
+    background-image: linear-gradient(to bottom, rgba(85, 180, 208, 0), rgba(85, 180, 208, 0), rgba(85, 180, 208, .04), rgba(85, 180, 208, .075));
+    z-index: 2;
+}
+
+.bg-img, .bg-img-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 128px;
+    width: calc(100vw - 256px);
+    height: 75vh;
+}
+
 @import './navbar.scss';
 @import './footer.scss';
 @import './home.scss';
@@ -63,4 +92,5 @@ h4 {
 @import './screens/phone/p-index.scss';
 @import './screens/tablet/t-index.scss';
 @import './screens/small-laptop/sl-index.scss';
+@import './assets/symbols.scss';
 

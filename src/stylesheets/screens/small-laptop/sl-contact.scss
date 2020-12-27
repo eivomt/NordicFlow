@@ -1,0 +1,85 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .contact-container {
+        grid-template-areas: 
+            ". . h h h h h h h h . ."
+            ". . . f f f f f f . . ."
+            "i i i i i i i i i i i i"
+            ". . l l l l l l l l . .";
+        
+        h2 {
+            margin-top: 128px;
+            font-size: 40px;
+            letter-spacing: .25rem;
+            margin-right: -.25rem;
+        }
+
+        form {
+            * {
+                font-size: 16px;
+            }
+        }
+
+        label {
+            font-size: 20px;
+        }
+    }
+
+    .team-link-container {
+        margin-top: 256px;
+        // margin-bottom: 5vh;
+    }
+
+    .contact-cards-container {
+        grid-template-areas: 
+        "img img img img img img img img img img img img"
+        ". . . card card card card card card . . .";
+
+        h3 {
+            font-size: 20px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        .team-img, .team-img-overlay {
+            height: 108px;
+            width: 108px;
+        }
+
+        .overlay-container {
+            height: 108px;
+        }
+
+        .business-card {
+            margin-top: 192px;
+            margin-bottom: 128px;
+        }
+    }
+
+    .contact-info-container {
+        margin-top: 92px;
+
+        h4 {
+            font-size: 16px;
+            margin-bottom: .5rem;
+        }
+
+        h3 {
+            font-size: 20px;
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+
+    #contact-click {
+        font-size: 32px !important;
+    }
+
+    .form-container {
+        margin-top: 24px;
+    }
+}

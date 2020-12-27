@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {NavLink} from "react-router-dom";
 
+// import WindSymbol from '../assets/wind-asset'
+
 class Home extends Component {
 
     render() {
@@ -9,6 +11,7 @@ class Home extends Component {
                 <div className="home">
                     <NavLink className="home-btn wind" to="/wind">
                         <p>Wind</p>
+                        {/* <WindSymbol/> */}
                     </NavLink>
 
                     <NavLink className="home-btn hydrogen" to="/hydrogen">

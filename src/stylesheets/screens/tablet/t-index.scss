@@ -23,7 +23,12 @@
         }
     }
 
+    .bg-img, .bg-img-overlay {
+        width: calc(100vw - 64px);
+        left: 32px;
+    }
 }
+
 @import './t-nav.scss';
 @import './t-contact.scss';
 @import './t-about.scss';

@@ -1,0 +1,36 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hydrogen-container {
+        grid-template-areas: 
+            ". . . . h h h h . . . ."
+            ". . . . s s s s . . . ."
+            ". . . p p p p p p . . .";
+
+        .title-container {
+            border-bottom: 1px solid $nf-blue;
+            padding-bottom: .2rem;
+        }
+
+        h3 {
+            text-align: left;
+            margin-bottom: 64px;
+        }
+
+        ul {
+            width: 100%;
+            padding-left: calc(100% / 6);
+
+            li {
+                font-size: 16px;
+                margin-top: 1rem;
+            }
+
+            li:first-of-type {
+                margin-top: 2rem;
+            }
+        }
+
+        
+
+    }
+
+}

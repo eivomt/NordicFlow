@@ -62,12 +62,4 @@
     li:last-of-type {
         margin-bottom: 0;
     }
-
-    .img-placeholder {
-        border: 1px solid $dw;
-        height: calc(100% - 32px);
-        width: 100%;
-        grid-area: img;
-        margin-top: 32px;
-    }
 }
