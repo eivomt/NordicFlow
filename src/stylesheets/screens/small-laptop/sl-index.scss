@@ -1,0 +1,8 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    nav, .footer, .contact-container, .about-main, .partners-container, .wind-container, .hydrogen-container, .oil-container, .contact-cards-container, .home {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+@import './sl-nav.scss';

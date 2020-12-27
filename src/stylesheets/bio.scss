@@ -4,14 +4,10 @@
 
     grid-template-columns: repeat(12, 1fr);
 
-    // padding-right: 128px;
-    // padding-left: 128px;
     margin-left: 128px;
     margin-right: 128px;
     width: calc(100vw - 256px);
     margin-top: 160px;
-
-
 }
 
 .bio-container {
@@ -22,12 +18,25 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-areas: 
         ". . . . img img . . . . "
-        ". phone .  name name name name  . email . "
-        ". description description description . experience experience experience experience  ."
+        ". phone phone  name name name name  email email . "
+        ". . description description description description description description . ."
+        ". . . et et et et . . ."
+        ". experience experience experience experience experience experience experience experience ."
     ;
     background-color: $lg;
     margin-bottom: 80px;
     padding-bottom: 32px;
+
+    .bio-experience-title {
+        grid-area: et;
+        justify-self: center;
+        text-align: center;
+        margin-top: 64px;
+        width: 100%;
+        padding-bottom: .25rem;
+        border-bottom: 1px solid $ddw;
+        color: $ddw;
+    }
 
 
     h4 {
@@ -93,7 +102,7 @@
 }
 
 .bio-experience {
-    margin-top: 64px;
+    margin-top: 32px;
     grid-area: experience;
 }
 
@@ -101,8 +110,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "company position position duration";
+    border-bottom: 1px solid $ddw;
+    padding-bottom: .25rem;
 
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 
     p {
         font-size: 14px;
@@ -113,12 +124,12 @@
 .bio-company {
     grid-area: company;
 }
+
 .bio-exp-position {
     grid-area: position;
-    padding-left: 5.55%;
-    padding-right: 5.55%;
     text-align: center;
 }
+
 .bio-duration {
     grid-area: duration;
     text-align: right;

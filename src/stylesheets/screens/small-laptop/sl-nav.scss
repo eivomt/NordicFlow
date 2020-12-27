@@ -1,0 +1,31 @@
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .line-container {
+        width: calc(100vw - 128px);
+        left: 64px;
+
+        .line {
+            width: calc(100vw - 128px);
+        }
+    }
+
+    .about-link {
+        grid-column-start: nav-col 6;
+        grid-column-end: nav-col 8;
+    }
+
+    .contact-link {
+        grid-column-start: nav-col 8;
+        grid-column-end: nav-col 10;
+    }
+
+    .partner-link {
+        grid-column-start: nav-col 10;
+        grid-column-end: nav-col 12;
+    }
+    
+    .nav-bg {
+        margin-left: 64px;
+        width: calc(100% - 128px);
+    }
+}
