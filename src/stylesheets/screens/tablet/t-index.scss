@@ -1,4 +1,33 @@
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    nav, .footer, .contact-container, .about-main, .partners-container, .wind-container, .hydrogen-container, .oil-container, .contact-cards-container, .home {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .avatar {
+        h4 {
+            text-align: center;
+        }
+
+        .l-name {
+            display: none;
+        }
+
+        .overlay-container {
+            height: 80px;
+        }
+
+        .team-img, .team-img-overlay  {
+            height: 80px;
+            width: 80px;
+        }
+    }
+
 }
-@import './t-nav.scss'
+@import './t-nav.scss';
+@import './t-contact.scss';
+@import './t-about.scss';
+@import './t-partners.scss';
+@import './t-wind.scss';
+@import './t-hydrogen.scss';
+@import './t-oil.scss';

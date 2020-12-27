@@ -1,130 +1,31 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    // .about-link, .contact-link, .partner-link, .line {
-    //     display: none;
-    // }
 
-    // .nav-container {
-    //     padding-top: 8px;
-    // }
+    .line-container {
+        width: calc(100vw - 64px);
+        left: 32px;
 
-    // .line-container {
-    //     top: 72px;
-    //     width: 100%;
-    //     left: 0;
-    //     height: 2px;
+        .line {
+            width: calc(100vw - 64px);
+        }
+    }
 
-    //     .line {
-    //         width: 100%;
-    //         height: 0px;
-    //     }
-    // }
+    .about-link {
+        grid-column-start: nav-col 6;
+        grid-column-end: nav-col 8;
+    }
 
-    // nav {
-    //     padding-left: 32px;
-    //     padding-right: 32px;
-    //     height: 36px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
+    .contact-link {
+        grid-column-start: nav-col 8;
+        grid-column-end: nav-col 10;
+    }
 
-    //     .nav-bg {
-    //         top: -57px;
-    //         margin-left: 0px;
-    //         width: 100vw;
-
-    //         .bg {
-    //             background-color: $lg;
-    //             border-bottom: 2px solid $bg;
-    //         }
-    //     }
-
-    //     .home-link {
-    //         width: 36px;
-    //     }
-
-    //     svg {
-    //         height: 36px !important;
-    //     }
-
-    //     .mobile-menu {
-    //         display: block;
-    //         height: 36px;
-    //         width: 36px;
-    //         border-radius: 50%;
-    //         background-color: $bg;
-    //         z-index: 3;
-
-    //         grid-column: col 11;
-
-    //         .menu-hidden {
-    //             margin-left: 68px !important;
-    //         }
+    .partner-link {
+        grid-column-start: nav-col 10;
+        grid-column-end: nav-col 12;
+    }
     
-    
-    //         .menu {
-    //             width: 50vw;
-    //             height: calc(100vh - 89px);
-    
-    //             background-color: $dw;
-    //             margin-top: 45px;
-    //             margin-left: calc(-50vw + 68px);
-    //             padding-left: 2rem;
-    //             padding-top: calc(52px);
-    //             border-left: 4px solid $nf-blue;
-    
-    //             transition: .4s;
-            
-    
-    //             a {
-    //                 p {
-    //                     margin-bottom: 1rem;
-    //                     color: $bg;
-    
-    //                 }
-    //             }
-    
-    //             .mobile-nav-line {
-    //                 width: 80%;
-    //                 height: 1px;
-    //                 background-color: $ddw;
-    //                 margin-bottom: 1rem;
-    //             }
-
-    //             #mobile-nav-line-info {
-    //                 margin-top: 20vh;
-    //             }
-
-    //             .mobile-nav-info {
-    //                 color: $ddw;
-    //                 font-size: 12px;
-    //                 margin-bottom: 1rem;
-
-    //                 span {
-    //                     font-size: 10px;
-    //                 }
-    //             }
-    
-    //             .mobile-wind, .mobile-hydrogen, .mobile-oil {
-    
-    //                 p {
-    //                     color: $lg;
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     .mobile-nav-text {
-    //         display: block;
-    //         z-index: 3;
-
-    //         color: $dw;
-    //         font-weight: 100;
-    //         font-size: 16px;
-
-    //         span {
-    //             color: $nf-blue;
-    //         }
-    //     }
-    // }
-    
+    .nav-bg {
+        margin-left: 32px;
+        width: calc(100% - 64px);
+    }
 }

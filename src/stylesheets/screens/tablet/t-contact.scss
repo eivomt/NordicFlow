@@ -1,0 +1,26 @@
+@media screen and (min-width: 601px) and (max-width: 768px) {
+
+    .contact-container {
+        grid-template-areas: 
+            ". . h h h h h h h h . ."
+            ". . . f f f f f f . . ."
+            "i i i i i i i i i i i i"
+            ". . . l l l l l l . . .";
+        
+        h2 {
+            margin-top: 10vh;
+            font-size: 32px;
+        }
+    }
+
+    .team-link-container {
+        margin-top: 12.5vh;
+        // margin-bottom: 5vh;
+    }
+
+    .contact-cards-container {
+        grid-template-areas: 
+        "img img img img img img img img img img img img"
+        ". . . card card card card card card . . .";
+    }
+}

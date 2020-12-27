@@ -20,9 +20,6 @@ class Hydrogen extends Component {
                         <li>Electropolished wet parts in all pump equipment</li>
                     </ul>
                 </div>
-
-                <div className="img-placeholder"></div>
-
             </div>
         )
     }

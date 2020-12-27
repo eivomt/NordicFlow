@@ -20,8 +20,6 @@ class Oil extends Component {
                     <li><span>Chemical Injection</span> Pump Packages</li>
                     <li><span>Misc.</span> Pump Packages</li>
                 </ul>
-
-                <div className="img-placeholder"></div>
             </div>
         )
     }
