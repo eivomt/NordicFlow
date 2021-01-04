@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import oilImg from '../assets/oil.png'
+import hydrogenImg from '../assets/hydrogen.png'
 
 class Hydrogen extends Component {
 
@@ -22,7 +22,7 @@ class Hydrogen extends Component {
                     </ul>
                 </div>
 
-                <img className="bg-img" id="oil-bg" src={oilImg} alt="background"/>
+                <img className="bg-img" id="oil-bg" src={hydrogenImg} alt="background"/>
                 <div className="bg-img-overlay"/>
             </div>
         )

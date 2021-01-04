@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import oilImg from '../assets/oil.png'
+import windImg from '../assets/wind.png'
 
 class Wind extends Component {
 
@@ -39,7 +39,7 @@ class Wind extends Component {
                     <p>We also provide state of the art condition monitoring systems for pumps and motors in a cloud based solution, providing real-time monitoring for the whole wind park.</p>
                 </div>
 
-                <img className="bg-img" id="oil-bg" src={oilImg} alt="background"/>
+                <img className="bg-img" id="oil-bg" src={windImg} alt="background"/>
                 <div className="bg-img-overlay"/>
 
             </div>

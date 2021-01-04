@@ -1,24 +1,51 @@
 @media only screen and (max-width: 600px) {
+
     .home-container {
-        height: calc(100vh - 59px - 36px);
+        height: calc(100vh - 55px - 36px);
         margin-top: -9px;
         display: block;
         position: relative;
     }
 
     .home {
-        padding-right: 30vw;
-        padding-left: 30vw;
+        padding-right: 0vw;
+        padding-left: 0vw;
         
         height: 100%;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+
 
         .home-btn {
-            margin-top: 2.5vw;
-            height: 15vh;
+            // margin-top: 2.5vw;
+            height: 33%;
+            border: none;
+
+            img {
+                width: 100%;
+                margin-left: 0;
+
+                mask-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.2), rgba(0,0,0,.3), rgba(0,0,0,.7));
+            }
+
+            .home-img-overlay {
+                background-image: linear-gradient(to bottom, rgba(85, 180, 208, 0), rgba(85, 180, 208, 0.05), rgba(85, 180, 208, 0.1), rgba(85, 180, 208, 0.3));
+                opacity: 1;
+
+                p {
+                    opacity: 1;
+                    margin-left: 2rem;
+                    color: $dw;
+                    margin-top: 17.5%;
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: .3rem;
+                    justify-content: left;
+                }
+            }
         }
     }
 

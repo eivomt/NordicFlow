@@ -1,0 +1,21 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .home-img-overlay {
+        p {
+            margin-top: 110%;
+            font-size: 24px !important;
+            margin-left: 0rem !important;
+        }
+    }
+
+    .wind {
+        img {
+            margin-left: -150px;
+        }
+    }
+
+    .oil {
+        img {
+            margin-left: -700px;
+        }
+    }
+}

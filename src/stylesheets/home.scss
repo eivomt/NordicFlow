@@ -6,27 +6,59 @@
     padding-left: 128px;
 
     width: 100%;
+    height: 100%;
 
     position: relative;
 }
 
 .home-container {
-    height: calc(100vh - 176px);
+    height: calc(100vh - 150px);
+    margin-top: -22px;
     display: flex;
     align-items: center;
 }
 
 .home-btn {
     width: 100%;
-    padding-top: 100%;
-    background-color: $lg;
 
     position: relative;
 
-    grid-row: home-row 1;
+    grid-row: 1 / home-row 3;
 
     justify-self: center;
     text-align: center;
+
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,.3), rgba(0,0,0,.7));
+    }
+
+    .home-img-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(85, 180, 208, 0), rgba(85, 180, 208, 0), rgba(85, 180, 208, 0.2), rgba(85, 180, 208, 0.6));
+        z-index: 2;
+        opacity: .3;
+
+        transition: .4s;
+    }
+
+    .home-img-overlay:hover {
+        opacity: 1;
+
+            p {
+                opacity: 1;
+                color: $dw;
+                margin-left: -2rem;
+            }
+    }
 
     p {
         position: absolute;
@@ -34,26 +66,50 @@
         left: 0;
         width: 100%;
         height: 100%;
-
+        font-size: 24px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
 
-        color: white;
+        margin-left: -4rem;
+        margin-top: 65%;
+
+        color: $ddw;
+        letter-spacing: .4rem;
+        font-weight: 400;
+
+        opacity: 0;
+
+        transition: .8s;
     }
 }
 
 .wind {
-    grid-column-start: home-col 2;
+    grid-column-start: 1;
     grid-column-end: home-col 4;
+    border-right: 2px solid $bg;
+
+    img {
+        margin-left: -375px;
+    }
 }
 
 .hydrogen {
-    grid-column-start: home-col 5;
-    grid-column-end: home-col 7;
+    grid-column-start: home-col 4;
+    grid-column-end: home-col 8;
+
+    img {
+        margin-left: -240px;
+    }
 }
 
 .oil {
     grid-column-start: home-col 8;
-    grid-column-end: home-col 10;
+    grid-column-end: home-col 12;
+    border-left: 2px solid $bg;
+
+    img {
+        margin-left: -300px;
+    }
 }
