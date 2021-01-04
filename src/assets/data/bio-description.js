@@ -5,9 +5,9 @@ let descriptionArray =
 
         "He was responsible for starting up and commissioning several pump packages in Korea. Torjus still has a valid offshore certificate and is available to travel offshore.",
 
-        "For the last two years Torjus have been working as a project manager, while helping on both After Sale and new Sales within the Oil & Gas industry.",
+        "For the last two years Torjus has been working as a project manager, while helping on both After Sale and new Sales within the Oil & Gas industry.",
 
-        "Torjus is a multi-talented man and will be working both with Sales, Project Management and Service/Commissioning for Nordic Flow."
+        "Torjus is a multi-talented man and works with Sales, Project Management and Service/Commissioning for Nordic Flow."
     ],
 
     [
@@ -15,7 +15,7 @@ let descriptionArray =
 
         "Additionally, Johan has plenty of practical and technical skills and is experienced with everything from testing to project management. He started as a process engineer, and that’s where his heart is.",
 
-        "Johan will be Nordic Flow’s CTO and will be involved in all potential projects as a technical supervisor, as well as assisting the CEO with various administrative duties."
+        "Johan is Nordic Flow’s CTO and is involved in all potential projects as a technical supervisor, as well as assisting the CEO with various administrative duties."
     ],
 
     [
@@ -23,7 +23,7 @@ let descriptionArray =
 
         "He is an experienced Project Manager, who is used to handling small and large projects both technically and commercially. With experience both from the client and supplier side, he is able to anticipate client needs and customize solutions based on equipment and market.",
 
-        "Christian will be the head of Project Management in Nordic Flow, and will work as Project Manager for all major projects."
+        "Christian is head of Project Management in Nordic Flow, and works as Project Manager for all major projects."
     ],
 
     [
@@ -31,7 +31,7 @@ let descriptionArray =
 
         "He is an experienced Sales Manager, who is used to quoting small & large projects both technically and commercially. ",
 
-        "Mark will be in charge of Sales and Marketing for Nordic Flow." 
+        "Mark is in charge of Sales and Marketing for Nordic Flow." 
     ],
 
     [
@@ -39,14 +39,14 @@ let descriptionArray =
 
         "He is experienced with Project Management and Technical Lead, and has multi-discipline skills. Per Einar appreciate structured way of working, and is a believer of «Performance through employee satisfaction» ",
 
-        "Per Einar will be Nordic Flow’s CEO "
+        "Per Einar is Nordic Flow’s CEO "
     ],
 
 
     [
         "Eirik has more than 30 years experience from finance and accounting with private and public companies as well as banking.",
 
-        "Eirik will be Nordic Flow’s CFO and will be responsible for accounting and finance as well as assisting the CEO with various administrative duties."
+        "Eirik is Nordic Flow’s CFO and is responsible for accounting and finance as well as assisting the CEO with various administrative duties."
     ]
 
 ]
