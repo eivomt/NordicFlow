@@ -20,7 +20,6 @@ class MobileNavigation extends Component {
     }
 
     toggleMobileMenu = () => {
-
         let menu = document.querySelector(".menu")
         let content = document.querySelector(".content")
     
@@ -55,6 +54,11 @@ class MobileNavigation extends Component {
     render() {
         return(
             <div className="mobile-menu" ref={this.mobileNavRef} onClick={() => this.toggleMobileMenu()}>
+                <div className="mobile-menu-icon">
+                    <div className="mobile-menu-icon-line"/>
+                    <div className="mobile-menu-icon-line"/>
+                    <div className="mobile-menu-icon-line"/>
+                </div>
               
                 <div className="menu menu-hidden">
                     <NavLink
@@ -69,13 +73,13 @@ class MobileNavigation extends Component {
 
                     <NavLink
                     to="/partners" replace className="mobile-nav-link mobile-partner-link">
-                        <p>Partners</p>
+                        <p>Suppliers</p>
                     </NavLink>
 
                     <div className="mobile-nav-line"/>
 
                     <NavLink className="mobile-nav-link mobile-wind" to="/wind">
-                        <p>Wind</p>
+                        <p>Offshore Wind</p>
                     </NavLink>
 
                     <NavLink className="mobile-nav-link mobile-hydrogen" to="/hydrogen">
@@ -83,7 +87,7 @@ class MobileNavigation extends Component {
                     </NavLink>
 
                     <NavLink className="mobile-nav-link mobile-oil" to="/oil">
-                        <p>Oil</p>
+                        <p>Oil & Gas</p>
                     </NavLink>
 
                     {/* <div id="mobile-nav-line-info" className="mobile-nav-line"/>

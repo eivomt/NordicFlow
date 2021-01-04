@@ -4,13 +4,21 @@ import partnerArray from '../assets/data/partner-data'
 
 class Partners extends Component {
 
+    
     render() {
+
+        let partners = []
+        for (let partner in partnerArray) {
+            partners.push(
+                <Partner key={partner} name={partnerArray[partner].name} description={partnerArray[partner].description} logo={partnerArray[partner].logo} website={partnerArray[partner].website}/>
+            )
+        }
+
         return(
             <div className="partners-container">
-                <h2>OUR <span>PARTNERS</span></h2>
+                <h2>OUR <span>SUPPLIERS</span></h2>
                 <div className="partners-background">
-                    <Partner name={partnerArray[0].name} description={partnerArray[0].description} logo={partnerArray[0].logo} website="https://www.celerosft.com/en-us/brands/clydeunion-pumps"/>
-                    <Partner name={partnerArray[1].name} description={partnerArray[1].description} logo={partnerArray[1].logo} website="https://www.wepuko.de/en/homepage"/>
+                    {partners}
                 </div>
             </div>
         )

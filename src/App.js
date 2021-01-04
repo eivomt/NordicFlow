@@ -62,7 +62,7 @@ function App() {
 
             <NavLink
             to="/partners" replace className="nav-link partner-link">
-              <p>Partners</p>
+              <p>Suppliers</p>
             </NavLink>
 
             <div className="line"></div>
@@ -75,8 +75,8 @@ function App() {
         <div className="footer">
           <div className="f-line"></div>
 
-            <p className="f-name f-content">+47 95844449</p>
-            <p className="f-mail f-content">sales@nordicflow.no</p>
+            <p className="f-name f-content">+47 41522557</p>
+            <p className="f-mail f-content"><a href="mailto:sales@nordicflow.no">sales@nordicflow.no</a></p>
 
             <div className="f-bg">
               <div className="bg"></div>

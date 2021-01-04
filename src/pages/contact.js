@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import CardSelector from '../assets/components/card-selector'
+import ContactForm from '../assets/components/contact-form'
 
 class Contact extends Component {
     constructor(props) {
@@ -42,30 +43,7 @@ class Contact extends Component {
 
                         <h2>GET IN <span>TOUCH</span></h2>
 
-                        <div className="form-container">
-                            <form action="" id="mail-form" autoComplete="off">
-                                <label htmlFor="mail">Your email</label>
-                                <br/>
-                                <input type="email" name="mail" id="mail"/>
-                                <br/>
-                                <label htmlFor="subject">Subject</label>
-                                <br/>
-                                <select name="subject" id="subject">
-                                    <option value="Other">Other</option>
-                                    <option value="After Sale">After Sale</option>
-                                    <option value="Service">Service</option>
-                                    <option value="New sale">New Sale</option>
-                                    <option value="Claim">Claim</option>
-                                </select>
-                                <br/>
-                                <label htmlFor="message">Message</label>
-                                <br/>
-                                <textarea name="message" id="message" cols="30" rows="10" form="mail-form"/>
-                                <br/>
-                                <input value="SEND" type="submit" id="submit"/>
-                            </form>
-                            
-                        </div>
+                        <ContactForm/>
 
                         <div className="team-link-container">
                             <p id="contact-click" onClick={ () => { this.handleParticularClick() }}>Looking for someone <span>in particular</span>?</p>

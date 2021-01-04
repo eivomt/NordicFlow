@@ -71,3 +71,11 @@
     height: 128px;
     margin-top: -64px;
 }
+
+.pending {
+    pointer-events: none;
+    
+    .team-img-overlay {
+        opacity: .95;
+    }
+}

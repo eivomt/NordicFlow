@@ -31,7 +31,7 @@
 
             .bg {
                 background-color: $lg;
-                border-bottom: 2px solid $bg;
+                border-bottom: 2px solid $nf-blue;
             }
         }
 
@@ -47,11 +47,29 @@
             display: block;
             height: 36px;
             width: 36px;
-            border-radius: 50%;
-            background-color: $bg;
+            // border-radius: 50%;
+            // background-color: $bg;
             z-index: 3;
 
             grid-column: col 11;
+
+            .mobile-menu-icon {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                padding-top: 12.5%;
+                padding-bottom: 12.5%;
+
+                .mobile-menu-icon-line {
+                    width: 75%;
+                    height: 2px;
+                    background-color: $dw;
+                    transition: .4s;
+                }
+            }
 
             .menu-hidden {
                 margin-left: 68px !important;
@@ -63,11 +81,11 @@
                 height: calc(100vh - 89px);
     
                 background-color: $dw;
-                margin-top: 45px;
+                margin-top: 11px;
                 margin-left: calc(-50vw + 68px);
                 padding-left: 2rem;
                 padding-top: calc(52px);
-                border-left: 4px solid $nf-blue;
+                border-left: 2px solid $nf-blue;
     
                 transition: .4s;
             

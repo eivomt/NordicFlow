@@ -64,7 +64,7 @@ let experienceArray = [
             duration: "2002 - 2005"
         },
         {
-            company: "ABB Offshor Systems, Umoe Olje & Gass, Dyno Kjemi, Aker Engineering, H-invent",
+            company: "ABB Offshore Systems, Umoe Olje & Gass, Dyno Kjemi, Aker Engineering, H-invent",
             position: "Process Engineer",
             duration: "1990 - 2002"
         },

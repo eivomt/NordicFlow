@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {NavLink} from "react-router-dom";
 
-// import WindSymbol from '../assets/wind-asset'
 
 class Home extends Component {
 
@@ -10,8 +9,7 @@ class Home extends Component {
             <div className="home-container">
                 <div className="home">
                     <NavLink className="home-btn wind" to="/wind">
-                        <p>Wind</p>
-                        {/* <WindSymbol/> */}
+                        <p>Offshore<br/>Wind</p>
                     </NavLink>
 
                     <NavLink className="home-btn hydrogen" to="/hydrogen">
@@ -19,7 +17,7 @@ class Home extends Component {
                     </NavLink>
 
                     <NavLink className="home-btn oil" to="/oil">
-                        <p>Oil</p>
+                        <p>Oil & Gas</p>
                     </NavLink>
 
                 </div>
