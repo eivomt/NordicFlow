@@ -49,7 +49,7 @@ class CardSelector extends Component {
                 <ul className="scrollable-list">
                             
                     <li>
-                        <Employee active={ this.state.selected === 1 ? true : false } number={1} img={tm1} fName="Torjus" lName=" Wæringsåsen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
+                        <Employee active={ this.state.selected === 1 ? true : false } number={1} img={tm1} fName="Torjus" lName=" Wæringsaasen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
                     </li>
 
                     <li>
@@ -75,7 +75,7 @@ class CardSelector extends Component {
                 </ul>
 
                 <div className="team-container">
-                    <Employee active={ this.state.selected === 1 ? true : false }  number={1} img={tm1} fName="Torjus" lName="Wæringsåsen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
+                    <Employee active={ this.state.selected === 1 ? true : false }  number={1} img={tm1} fName="Torjus" lName="Wæringsaasen" position="Chief Operating Officer" phone="+47 41522557" email="tw@nordicflow.no" description={descriptionArray[0]} experience={experienceArray[0]} handleEmployeeClick={this.handleEmployeeClick}/>
 
                     <Employee active={ this.state.selected === 2 ? true : false }  number={2} img={tm2} fName="Johan" lName="Collett" position="Chief Technical Officer" phone="+47 95844449" email="jc@nordicflow.no" description={descriptionArray[1]} experience={experienceArray[1]} handleEmployeeClick={this.handleEmployeeClick}/>
 

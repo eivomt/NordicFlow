@@ -1,6 +1,7 @@
 import clydeUnionLogo from '../ClydeUnion.png'
 import wepukoPahnkeLogo from '../WepuhkoPahnke.png'
 import prominentLogo from '../ProMinent.png'
+import eagleLogo from '../Eagle.png'
 
 let partnerArray = [
     {
@@ -40,6 +41,16 @@ let partnerArray = [
         ],
         logo : prominentLogo,
         website : "https://www.prominent.com/en/"
+    },
+    {
+        name : "Eagle Technology",
+        description : [
+            "Over the last 5 years Eagle AS has developed into one of Norway’s most innovative companies within our business areas. With Rena Quality Group, Eagle has invested considerable resources and created a long-term strategy for the initiation of several major development projects.", 
+            
+            "We’re convinced that this will contribute to significant industrial growth in the years to come. Eagle Technology focus on sales, construction and production of advanced mechanical solutions to both sister companies within the Eagle Group and to the external marked, primary in Scandinavia, Germany, Austria and Balkan."
+        ],
+        logo : eagleLogo,
+        website : "https://www.eagle.no/"
     }
 ]
 

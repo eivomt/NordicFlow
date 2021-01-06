@@ -28,7 +28,7 @@ class Wind extends Component {
                     <h2>Floating Turbine</h2>
 
                     <div className="explanation-container">
-                        <h3><span>TO DO</span> Explanation of Floating Turbines</h3>
+                        <h3>A floating wind turbine is an offshore wind turbine mounted on a floating structure that allows the turbine to generate electricity in water depths where fixed-foundation turbines are not feasible</h3>
                     </div>
 
                     <p>Nordic Flow can provide all types of pump solutions for Floating Turbines like:</p>

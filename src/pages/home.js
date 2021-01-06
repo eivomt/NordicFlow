@@ -11,6 +11,7 @@ class Home extends Component {
         return(
             <div className="home-container">
                 <div className="home">
+                    <h3 className="home-text">Your provider of pumps & pump solutions</h3>
                     <NavLink className="home-btn wind" to="/wind">
                         <img src={windImg} alt=""/>
                         <div className="home-img-overlay">

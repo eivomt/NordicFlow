@@ -60,7 +60,7 @@ class Contact extends Component {
                             </div>
                             <div className="info-phone">
                                 <h4>Phone</h4>
-                                <h3>+47 95844449</h3>
+                                <h3>+47 41522557</h3>
                             </div>
                         </div>
                     </div>
