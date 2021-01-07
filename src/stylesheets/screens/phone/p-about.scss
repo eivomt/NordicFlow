@@ -52,7 +52,6 @@
             padding: 24px;
             padding-left: 24px;
             padding-right: 24px;
-            margin-bottom: 64px;
             margin-top: 32px;
             margin-left: -32px;
             margin-right: -32px;
@@ -75,5 +74,17 @@
 
     .team-container {
         display: none;
+    }
+
+    .learn-more {
+        grid-column-start: 1;
+        grid-column-end: col 12;
+        margin: 0 -32px;
+        margin-bottom: 2rem;
+
+        .learn-more-text {
+            padding: 24px;
+        }
+
     }
 }

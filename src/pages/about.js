@@ -90,7 +90,7 @@ class About extends Component {
                             products that we deliver and believe in what we do.</p>
                         </div>
                         <div className="learn-more">
-                            <a onClick={() => {this.learnMore()}}>learn more . . .</a>
+                            <p className="learn-more-click" onClick={() => {this.learnMore()}}>learn more . . .</p>
                             <div className="learn-more-text-container">
                                 <p className="learn-more-text">
                                     NORDIC <span>FLOW</span> specializes in pump and process solutions for various
@@ -155,7 +155,7 @@ class About extends Component {
 
                         </div>
                     </div>
-                <div id="scroll-ref" style={{ float:"left", clear: "both", marginTop: "-335px"}} ref={(el) => { this.end = el }}/>
+                <div id="scroll-ref" style={{ float:"left", clear: "both", marginTop: "-150px"}} ref={(el) => { this.end = el }}/>
                 </section>
 
                 <section id="bio-section">

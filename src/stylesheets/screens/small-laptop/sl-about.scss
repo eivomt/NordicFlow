@@ -63,7 +63,6 @@
         grid-column-end: col 10;
         padding: 36px;
         margin-top: 36px;
-        margin-bottom: 256px;
     }
 
     .bio-main {
@@ -101,5 +100,18 @@
                 grid-area: et;
             }
         }
+    }
+
+    .learn-more {
+        grid-column-start: col 2;
+        grid-column-end: col 10;
+
+        .learn-more-text {
+            margin-top: -150%;
+        }
+    }
+
+    #scroll-ref {
+        margin-top: -50px;
     }
 }

@@ -189,10 +189,11 @@
     padding-left: 42px;
     margin-bottom: 64px;
     color: $nf-blue;
-    a {
+    .learn-more-click {
         cursor: pointer;
     }
 }
+
 
 .learn-more-text-container {
     overflow: hidden;
@@ -207,12 +208,12 @@
     background-color: $lg;
     color: $lg;
     transition: .5s;
-    margin-top: -100%;
+    margin-top: -150%;
 }
 
 .learn-more-active {
     padding: 21px 42px;
-    margin-top: .5rem;
+    margin-top: .5rem !important;
     animation: forwards .5s learnmore;
     animation-delay: .5s;
 }
