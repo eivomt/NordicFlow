@@ -29,11 +29,11 @@ function ContactForm() {
                 <label htmlFor="subject">Subject</label>
                 <br/>
                 <select name="subject" id="subject">
-                    <option value="Other">Other</option>
                     <option value="After Sale">After Sale</option>
                     <option value="Service">Service</option>
                     <option value="New sale">New Sale</option>
                     <option value="Claim">Claim</option>
+                    <option value="Other">Other</option>
                 </select>
                 <br/>
                 <label htmlFor="message">Message</label>

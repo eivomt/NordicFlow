@@ -42,26 +42,36 @@
 
 .partner-container {
     width: 100%;
-    margin-top: 128px;
+    margin-top: 32px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "logo name name name desc desc desc desc";
+    grid-template-areas: 
+    ". . . logo logo . . ."
+    ". . name name name name . ."
+    ". desc desc desc desc desc desc .";
 
     a:first-child {
         grid-area: logo;
         align-self: center;
+        padding: 20%;
+        margin-bottom: -20%;
     }
 
     .name-link {
         grid-area: name;
         align-self: center;
+        text-align: center;
+
         width: 100%;
         padding-left: 16.66%;
         padding-right: 16.66%;
         text-decoration: none;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
 
         h3 {
             text-decoration: none;
+            font-size: 20px;
         }
 
         h3:hover {

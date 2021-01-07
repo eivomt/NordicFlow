@@ -44,6 +44,10 @@ function App() {
               <Logo2/>
             </NavLink>
 
+            <NavLink exact to="/" replace className="nav-title">
+              <h1>NORDIC <span>FLOW</span></h1>
+            </NavLink>
+
             <NavLink exact to="/" replace className="mobile-nav-text">
               <h1 className="mobile-nav-text">NORDIC <span>FLOW</span></h1>
             </NavLink>

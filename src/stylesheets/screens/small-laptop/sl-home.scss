@@ -2,7 +2,7 @@
     .home-img-overlay {
         p {
             margin-top: 110%;
-            font-size: 24px !important;
+            font-size: 20px !important;
             margin-left: 0rem !important;
         }
     }
@@ -20,7 +20,21 @@
     }
 
     .home-text {
-        font-size: 20px;
+        font-size: 32px;
         padding-top: 25%;
     }
+
+    @keyframes hometext {
+        from {
+            padding-left: 1.5625%;
+            letter-spacing: .05rem;
+            opacity: 0;
+        }
+    
+        to {
+            padding-left: 6.25%;
+            letter-spacing: .15rem;
+            opacity: .9;
+        }
+    } 
 }

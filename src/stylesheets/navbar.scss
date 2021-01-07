@@ -108,3 +108,27 @@ nav {
 .mobile-nav-text {
     display: none;
 }
+
+.nav-title {
+    z-index: 3;
+    grid-column-start: nav-col 2;
+    grid-column-end: nav-col 5;
+    height: 42px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 16.666%;
+    
+
+    h1 {
+        font-weight: 400;
+        letter-spacing: .2rem;
+        font-size: 20px;
+        color: $dw;
+
+        span {
+            font-weight: 400;
+            color: $nf-blue;
+        }
+    }
+}

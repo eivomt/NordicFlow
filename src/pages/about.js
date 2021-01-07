@@ -21,6 +21,7 @@ class About extends Component {
 
         this.state = {
             bioOpen: false,
+            learnMoreOpen : false,
         }
     }
 
@@ -38,14 +39,13 @@ class About extends Component {
             bioExperience : props.experience,
             selected : props.number
         })
+        setTimeout(() => {
+            this.scrollToBottom()
+        }, 400);
     }
 
     scrollToBottom = () => {
         this.end.scrollIntoView({ behavior: "smooth"})
-    }
-
-    componentDidUpdate() {
-        this.scrollToBottom()
     }
 
     componentDidMount() {
@@ -56,6 +56,21 @@ class About extends Component {
         }, 400)
     }
 
+    learnMore = () => {
+        let text = document.querySelector(".learn-more-text")
+        this.state.learnMoreOpen ? (
+            text.classList.remove("learn-more-active")
+            ) : (
+                text.classList.add("learn-more-active")
+            )
+        this.setState({learnMoreOpen : !this.state.learnMoreOpen})
+        if (!this.state.bioOpen) {
+            setTimeout(() => {
+                this.scrollToBottom()
+            }, 400);
+        }
+    }
+
     render() {
         return(
             <div className="about-container" ref={this.scrollRef}>
@@ -64,9 +79,7 @@ class About extends Component {
                     <div className="about-main">
 
                         <div className="about-title">
-                            <div className="t-line"></div>
                             <h2>NORDIC <span>FLOW</span></h2>
-                            <div className="t-line"></div>
                         </div>
 
                         <h4 className="subtitle">Your provider of pumps & pump solutions</h4>
@@ -75,6 +88,23 @@ class About extends Component {
                             <p>We genuinely believe that we can provide the best customer service & technical solutions
                             at a very competitive price. Our team consist of people that have true understanding of the
                             products that we deliver and believe in what we do.</p>
+                        </div>
+                        <div className="learn-more">
+                            <a onClick={() => {this.learnMore()}}>learn more . . .</a>
+                            <div className="learn-more-text-container">
+                                <p className="learn-more-text">
+                                    NORDIC <span>FLOW</span> specializes in pump and process solutions for various
+                                    industries, with a highly experienced team with background from the oil & gas market with the toughest requirements.
+                                    <br/>
+                                    <br/>
+                                    Combined we have more than 80 years of experience. We aim to serve our
+                                    customers with high quality products and systems in compliance to their requirements.
+                                    <br/>
+                                    <br/>
+                                    We deliver a full range of Pump Packages in compliance with the highest
+                                    standards and requirements, suitable for ATEX zones and harsh environments.
+                                </p>
+                            </div>
                         </div>
 
 
@@ -125,7 +155,7 @@ class About extends Component {
 
                         </div>
                     </div>
-                <div id="scroll-ref" style={{ float:"left", clear: "both", marginTop: "-308px"}} ref={(el) => { this.end = el }}/>
+                <div id="scroll-ref" style={{ float:"left", clear: "both", marginTop: "-335px"}} ref={(el) => { this.end = el }}/>
                 </section>
 
                 <section id="bio-section">

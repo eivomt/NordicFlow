@@ -1,7 +1,7 @@
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     .home-img-overlay {
         p {
-            margin-top: 90%;
+            margin-top: 30vh;
             font-size: 20px;
             letter-spacing: .2rem;
 
@@ -16,7 +16,20 @@
     }
 
     .home-text {
-        font-size: 20px;
+        font-size: 24px;
         padding-top: 12.5%;
     }
+    @keyframes hometext {
+        from {
+            padding-left: 1.5625%;
+            letter-spacing: .05rem;
+            opacity: 0;
+        }
+    
+        to {
+            padding-left: 9.375%;
+            letter-spacing: .15rem;
+            opacity: .9;
+        }
+    } 
 }
