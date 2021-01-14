@@ -1,7 +1,8 @@
 @media only screen and (max-width: 600px) {
 
     .home-container {
-        height: calc(100vh - 55px - 36px);
+        padding-bottom: 36px;
+        height: calc(100vh - 55px);
         margin-top: -9px;
         display: block;
         position: relative;

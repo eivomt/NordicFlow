@@ -64,11 +64,11 @@ class About extends Component {
                 text.classList.add("learn-more-active")
             )
         this.setState({learnMoreOpen : !this.state.learnMoreOpen})
-        if (!this.state.bioOpen) {
-            setTimeout(() => {
-                this.scrollToBottom()
-            }, 400);
-        }
+        // if (!this.state.bioOpen) {
+        //     setTimeout(() => {
+        //         this.scrollToBottom()
+        //     }, 400);
+        // }
     }
 
     render() {
