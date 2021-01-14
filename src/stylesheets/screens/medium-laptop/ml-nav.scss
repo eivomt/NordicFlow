@@ -1,0 +1,29 @@
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .nav-title {
+        grid-column-end: nav-col 6;
+        h1 {
+            // letter-spacing: .1rem;
+            // font-size: 18px;
+        }
+    }
+
+    .nav-link {
+        p {
+            // font-size: 12px;
+        }
+    }
+
+    .partner-link {
+        grid-column-end: nav-col 12;
+    }
+    
+    .contact-link {
+        grid-column-start: nav-col 8;
+        grid-column-end: nav-col 10;
+    }
+
+    .about-link {
+        grid-column-start: nav-col 6;
+        grid-column-end: nav-col 8;
+    }
+}
