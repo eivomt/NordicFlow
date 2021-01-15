@@ -4,6 +4,7 @@ import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
 import Partners from './pages/partners'
+import News from './pages/news'
 import Wind from './pages/wind'
 import Hydrogen from './pages/hydrogen'
 import Oil from './pages/oil-gas'
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/partners" component={Partners} />
+          <Route exact path="/news" component={News}/>
           <Route exact path="/wind" component={Wind} />
           <Route exact path="/hydrogen" component={Hydrogen} />
           <Route exact path="/oil" component={Oil} />
@@ -67,6 +69,11 @@ function App() {
             <NavLink
             to="/partners" replace className="nav-link partner-link">
               <p>Suppliers</p>
+            </NavLink>
+
+            <NavLink
+            to="/news" replace className="nav-link news-link">
+              <p>News</p>
             </NavLink>
 
             <div className="line"></div>

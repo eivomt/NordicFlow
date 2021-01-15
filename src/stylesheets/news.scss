@@ -1,0 +1,118 @@
+.news-page-container {
+    width: 100%;
+    padding-right: 128px;
+    padding-left: 128px;
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        ". . . . h h h h . . . ."
+        ". . . . s s s s . . . ."
+        "a a a a a a a a a a a a";
+    padding-bottom: -20vh;
+
+    
+    h2 {
+        grid-area: h;
+        justify-self: center;
+        text-align: center;
+        color: $dw;
+        font-weight: 100;
+        font-size: 32px;
+
+
+        span {
+            color: $nf-blue;
+        }
+    }
+
+    .news-paragraph {
+        grid-area: s;
+        margin-top: 16px;
+        color: $dw;
+        font-size: 14px;
+        min-height: 357px;
+    }
+
+    .news-articles-container {
+        margin-top: 64px;
+        grid-area: a;
+
+        .news-article-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-areas: 
+            ". . . . h h h h . . . ."
+            ". . . s s s s s s . d d"
+            "img img img img img img img img img img img img"
+            ". imgp imgp imgp imgp imgp imgp imgp imgp imgp imgp imgp"
+                ". . p p p p p p p p . ."
+                ". au au au au au au . . . . .";
+            margin-bottom: 20vh;
+            
+            h3 {
+                margin-top: 1rem;
+                grid-area: h;
+                text-align: center;
+                justify-self: center;
+                width: 100%;
+                font-size: 24px;
+                color: $dw;
+            }
+
+            .article-subtitle {
+                margin-top: 0rem;
+                grid-area: s;
+                font-size: 14px;
+                color: $ddw;
+                text-align: center;
+                margin-bottom: .5rem;
+            }
+
+            .article-date {
+                color: $ddw;
+                grid-area: d;
+                font-size: 14px;
+                text-align: right;
+                margin-bottom: .5rem;
+            }
+
+            .article-img-container {
+                grid-area: img;
+                border-bottom: 4px solid $nf-blue;
+                width: 100%;
+                height: calc(45vh + 4px);
+                background-image: linear-gradient(to bottom, rgba(85, 180, 208, 0), rgba(85, 180, 208, .1), rgba(85, 180, 208, 0.3), rgba(85, 180, 208, 0.6));
+                margin-bottom: 2rem;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 45vh;
+                    overflow: hidden;
+                    filter: grayscale(100);
+                    mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,.4), rgba(0,0,0,.7));
+                }
+            }
+
+            .article-content {
+                grid-area: p;
+                font-size: 14px;
+                color: $dw;
+                margin-bottom: 1.5rem;
+            }
+
+            .article-author {
+                grid-area: au;
+                font-size: 16px;
+                color: $dw;
+                margin-top: -1rem;
+
+                span {
+                    color: $ddw;
+                }
+            }
+        }
+    }
+}
