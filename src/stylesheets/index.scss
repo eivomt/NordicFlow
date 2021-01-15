@@ -38,6 +38,12 @@ $w: #FFFFFF;
 
 body {
     background-color: $bg;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .content {

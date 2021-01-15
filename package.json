@@ -1,6 +1,6 @@
 {
   "name": "flow",
-  "homepage": "http://nordicflow.no",
+  "homepage": "https://nordicflow.no",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

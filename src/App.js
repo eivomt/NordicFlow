@@ -15,7 +15,7 @@ import MobileNavigation from './assets/components/mobile-navigation'
 import {
   Route,
   NavLink,
-  HashRouter
+  HashRouter,
 } from "react-router-dom";
 
 function App() {
@@ -79,8 +79,14 @@ function App() {
         <div className="footer">
           <div className="f-line"></div>
 
-            <p className="f-name f-content">+47 41522557</p>
-            <p className="f-mail f-content"><a href="mailto:sales@nordicflow.no">sales@nordicflow.no</a></p>
+            <p className="f-name f-content">
+              <a href="tel:+47 41522557">
+                +47 41522557
+              </a>
+            </p>
+            <p className="f-mail f-content">
+              <a href="mailto:sales@nordicflow.no">sales@nordicflow.no</a>
+            </p>
 
             <div className="f-bg">
               <div className="bg"></div>

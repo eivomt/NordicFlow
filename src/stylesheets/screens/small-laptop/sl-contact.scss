@@ -6,9 +6,10 @@
             ". . . f f f f f f . . ."
             "i i i i i i i i i i i i"
             ". . l l l l l l l l . .";
+            padding-bottom: 52px;
         
         h2 {
-            margin-top: 128px;
+            margin-top: 64px;
             font-size: 40px;
             letter-spacing: .25rem;
             margin-right: -.25rem;
@@ -26,7 +27,7 @@
     }
 
     .team-link-container {
-        margin-top: 256px;
+        margin-top: 128px;
         // margin-bottom: 5vh;
     }
 
@@ -77,6 +78,7 @@
 
     #contact-click {
         font-size: 32px !important;
+        text-align: center;
     }
 
     .form-container {

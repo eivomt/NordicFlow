@@ -20,6 +20,16 @@ class Bio extends Component {
             description.push(<p key={x}>{this.props.description[x]}</p>)
         }
 
+        let phone = []
+        if (this.props.phone === "tel pending") {
+            phone.push(<h4 className="bio-phone">{this.props.phone}</h4>)
+        } else {
+            phone.push(
+            <a href={'tel:' + this.props.phone} className="bio-phone">
+                <h4>{this.props.phone}</h4>
+            </a>)
+        }
+
         return(
             <div className="bio-main">
                 <div className="bio-container">
@@ -28,8 +38,10 @@ class Bio extends Component {
                         <h2>{this.props.name}</h2>
                         <h4>{this.props.position}</h4>
                     </div>
-                    <h4 className="bio-phone">{this.props.phone}</h4>
-                    <h4 className="bio-email">{this.props.email}</h4>
+                    {phone}
+                    <a href={'mailto:' + this.props.email} className="bio-email">
+                        <h4>{this.props.email}</h4>
+                    </a>
                     <div className="bio-description">
                         {description}
                     </div>

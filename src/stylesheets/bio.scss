@@ -68,6 +68,7 @@
 .bio-phone {
     grid-area: phone;
     align-self: center;
+    text-decoration: none;
 }
 
 .bio-name-container {
@@ -88,6 +89,7 @@
     grid-area: email;
     justify-self: right;
     align-self: center;
+    text-decoration: none;
 }
 
 .bio-description {

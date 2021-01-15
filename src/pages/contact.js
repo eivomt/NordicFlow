@@ -52,7 +52,9 @@ class Contact extends Component {
                         <div className="contact-info-container">
                             <div className="info-email">
                                 <h4>Email</h4>
-                                <h3>sales@nordicflow.no</h3>
+                                <a href="mailto:sales@nordicflow.no">
+                                    <h3>sales@nordicflow.no</h3>
+                                </a>
                             </div>
                             <div className="info-address">
                                 <h4>Address</h4>
@@ -60,7 +62,9 @@ class Contact extends Component {
                             </div>
                             <div className="info-phone">
                                 <h4>Phone</h4>
-                                <h3>+47 41522557</h3>
+                                <a href="tel:+47 41522557">
+                                    <h3>+47 41522557</h3>
+                                </a>
                             </div>
                         </div>
                     </div>

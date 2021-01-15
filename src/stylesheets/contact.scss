@@ -82,6 +82,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    a {
+        text-decoration: none;
+    }
+
     div {
         width: 100%;
         display: flex;
