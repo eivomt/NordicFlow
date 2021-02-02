@@ -2,6 +2,7 @@ import clydeUnionLogo from '../ClydeUnion.png'
 import wepukoPahnkeLogo from '../WepuhkoPahnke.png'
 import prominentLogo from '../ProMinent.png'
 import eagleLogo from '../Eagle.png'
+import pleugerLogo from '../Pleuger.png'
 
 let partnerArray = [
     {
@@ -56,6 +57,16 @@ let partnerArray = [
         ],
         logo : eagleLogo,
         website : "https://www.eagle.no/"
+    },
+    {
+        name : "Pleuger Industries",
+        description : [
+            "Their durable pumps, designed for immediate use and multiple applications, have made them a leading manufacturer of submersible pumps for the industry, making Pleuger the best solution for offshore upstream applications.",
+
+            "Our durable, easy to service and high-performance pumps are used on rigs globally for a broad range of critical applications such as sea water lift, cooling water, boosting, ballast/de-ballast, firefighting and drain caisson applications."
+        ],
+        logo : pleugerLogo,
+        website : "https://www.pleugerindustries.com/en/"
     }
 ]
 
