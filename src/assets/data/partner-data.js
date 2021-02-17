@@ -1,8 +1,10 @@
-import clydeUnionLogo from '../ClydeUnion.png'
-import wepukoPahnkeLogo from '../WepuhkoPahnke.png'
-import prominentLogo from '../ProMinent.png'
-import eagleLogo from '../Eagle.png'
-import pleugerLogo from '../Pleuger.png'
+import clydeUnionLogo from '../supplier-logo/ClydeUnion.png'
+import wepukoPahnkeLogo from '../supplier-logo/WepuhkoPahnke.png'
+import prominentLogo from '../supplier-logo/ProMinent.png'
+import eagleLogo from '../supplier-logo/Eagle.png'
+import pleugerLogo from '../supplier-logo/Pleuger.png'
+import pcmLogo from '../supplier-logo/PCM.png'
+import pcmLogo2 from '../supplier-logo/PCM2.png'
 
 let partnerArray = [
     {
@@ -20,6 +22,31 @@ let partnerArray = [
         logo : clydeUnionLogo,
         website : "https://www.celerosft.com/en-us/brands/clydeunion-pumps"
     },
+
+    {
+        name : "Pleuger Industries",
+        description : [
+            "Their durable pumps, designed for immediate use and multiple applications, have made them a leading manufacturer of submersible pumps for the industry, making Pleuger the best solution for offshore upstream applications.",
+
+            "Our durable, easy to service and high-performance pumps are used on rigs globally for a broad range of critical applications such as sea water lift, cooling water, boosting, ballast/de-ballast, firefighting and drain caisson applications."
+        ],
+        logo : pleugerLogo,
+        website : "https://www.pleugerindustries.com/en/"
+    },
+
+    {
+        name : "PCM Moineau",
+        description : [
+            "The PCM Moineau™ - A progressing cavity pump is a culmination of our unrivalled industry expertise and our unwavering commitment to provide the best fluid handling solutions.",
+
+            "PCM Moineau™A pumps meet all the standard requirements of API 676 positive displacement pumps and are available in a range of materials including carbon steel, stainless steel, duplex steel and super duplex steel (NORSOK M650/630). The PCM's API 676 pump features a highly modular design that makes installation, operation and service easier in many applications.",
+
+            "Available in horizontal or Vertical configuration as well as PCM Standard progressing cavity pumps"
+        ],
+        logo : pcmLogo2,
+        website : "https://www.pcm.eu/en/oil-and-gas"
+    },
+
     {
         name : "Wepuko Pahnke",
         description : [
@@ -36,6 +63,7 @@ let partnerArray = [
         logo : wepukoPahnkeLogo,
         website : "https://www.wepuko.de/en/homepage"
     },
+
     {
         name : "ProMinent",
         description : [
@@ -48,6 +76,7 @@ let partnerArray = [
         logo : prominentLogo,
         website : "https://www.prominent.com/en/"
     },
+
     {
         name : "Eagle Technology",
         description : [
@@ -57,16 +86,6 @@ let partnerArray = [
         ],
         logo : eagleLogo,
         website : "https://www.eagle.no/"
-    },
-    {
-        name : "Pleuger Industries",
-        description : [
-            "Their durable pumps, designed for immediate use and multiple applications, have made them a leading manufacturer of submersible pumps for the industry, making Pleuger the best solution for offshore upstream applications.",
-
-            "Our durable, easy to service and high-performance pumps are used on rigs globally for a broad range of critical applications such as sea water lift, cooling water, boosting, ballast/de-ballast, firefighting and drain caisson applications."
-        ],
-        logo : pleugerLogo,
-        website : "https://www.pleugerindustries.com/en/"
     }
 ]
 

@@ -2,12 +2,12 @@ import React, {Component} from 'react'
 
 import Employee from './employee'
 
-import tm1 from '../1.png'
-import tm2 from '../2.png'
-import tm3 from '../3.png'
-import tm4 from '../4.png'
-import tm5 from '../5.png'
-import tm6 from '../6.png'
+import tm1 from '../employee-img/1.png'
+import tm2 from '../employee-img/2.png'
+import tm3 from '../employee-img/3.png'
+import tm4 from '../employee-img/4.png'
+import tm5 from '../employee-img/5.png'
+import tm6 from '../employee-img/6.png'
 
 import descriptionArray from '../data/bio-description'
 import experienceArray from '../data/bio-experience'
