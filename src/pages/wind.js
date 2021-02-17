@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import windImg from '../assets/wind.png'
+import windImg from '../assets/home-img/wind.png'
 
 class Wind extends Component {
 

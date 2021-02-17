@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import oilImg from '../assets/oil.png'
+import oilImg from '../assets/home-img/oil.png'
 
 class Oil extends Component {
     // style={"left: " + getComputedStyle(document.querySelector(".line-container")).left}

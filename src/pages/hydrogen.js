@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import hydrogenImg from '../assets/hydrogen.png'
+import hydrogenImg from '../assets/home-img/hydrogen.png'
 
 class Hydrogen extends Component {
 

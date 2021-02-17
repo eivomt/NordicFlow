@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import {NavLink} from "react-router-dom"
-import windImg from '../assets/wind.png'
-import hydrogenImg from '../assets/hydrogen.png'
-import oilImg from '../assets/oil.png'
+import windImg from '../assets/home-img/wind.png'
+import hydrogenImg from '../assets/home-img/hydrogen.png'
+import oilImg from '../assets/home-img/oil.png'
 
 
 class Home extends Component {

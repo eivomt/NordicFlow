@@ -8,7 +8,7 @@ import Wind from './pages/wind'
 import Hydrogen from './pages/hydrogen'
 import Oil from './pages/oil-gas'
 
-import Logo2 from './assets/logo2'
+import Logo2 from './assets/NF-logo/logo2'
 
 import MobileNavigation from './assets/components/mobile-navigation'
 
