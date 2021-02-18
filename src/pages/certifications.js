@@ -27,9 +27,9 @@ class Certifications extends Component {
                 </div>
 
                 {/* <div className="cert-pdf-bg"></div> */}
-                <div className="cert-pdf-placeholder">
+                {/* <div className="cert-pdf-placeholder">
                     <img src={isoImg} alt="" className="pdf"/>
-                </div>
+                </div> */}
             </div>
         )
     }
