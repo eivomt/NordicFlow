@@ -20,6 +20,7 @@
 
 .home-btn {
     width: 100%;
+    margin-top: 20%;
 
     position: relative;
 
@@ -130,6 +131,8 @@
 
     animation: forwards 5s hometext;
     animation-delay: .5s;
+
+    pointer-events: none;
 }
 
 @keyframes hometext {

@@ -18,7 +18,7 @@
 
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid $nf-blue;
+        border-bottom: 2px solid $nf-blue;
     
         span {
             color: $nf-blue;
@@ -71,11 +71,12 @@
         h3 {
             text-decoration: none;
             font-size: 20px;
+            border-bottom: 1px solid $bg;
+            transition: ease-in-out .2s;
         }
 
         h3:hover {
-            text-decoration: underline;
-            text-decoration-color: $nf-blue;
+            border-bottom: 1px solid $nf-blue;
         }
     }
 
@@ -83,6 +84,7 @@
 
     .partner-description {
         grid-area: desc;
+        padding-bottom: 32px;
 
         p {
             color: $dw;

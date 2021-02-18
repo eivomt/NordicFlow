@@ -8,9 +8,9 @@ class Bio extends Component {
         for (let x in this.props.experience) {
             jobs.push(
                 <div key={x} className="bio-job-container">
-                    <p className="bio-company">{this.props.experience[x].company}</p>
-                    <p className="bio-exp-position">{this.props.experience[x].position}</p>
-                    <p className="bio-duration">{this.props.experience[x].duration}</p>
+                    <p key={x + 1} className="bio-company">{this.props.experience[x].company}</p>
+                    <p key={x + 2} className="bio-exp-position">{this.props.experience[x].position}</p>
+                    <p key={x + 3} className="bio-duration">{this.props.experience[x].duration}</p>
                 </div>
             )
         }

@@ -2,6 +2,7 @@ import React from 'react'
 
 import Home from './pages/home'
 import About from './pages/about'
+import Certifications from './pages/certifications'
 import Contact from './pages/contact'
 import Partners from './pages/partners'
 import Wind from './pages/wind'
@@ -20,6 +21,18 @@ import {
 
 function App() {
 
+  let showCertBtn = () => {
+    let certBtn = document.querySelector(".cert-link")
+    certBtn.classList.add("cert-show")
+  }
+
+  let hideCertBtn = () => {
+    setTimeout(function() {
+      let certBtn = document.querySelector(".cert-link")
+      certBtn.classList.remove("cert-show")
+    }, 3500)
+  }
+
   return (
     <HashRouter>
       <div className="App">
@@ -27,6 +40,7 @@ function App() {
         <div className="content">
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/certifications" component={Certifications} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/partners" component={Partners} />
           <Route exact path="/wind" component={Wind} />
@@ -55,8 +69,15 @@ function App() {
             <MobileNavigation/>
 
             <NavLink
-            to="/about" replace className="nav-link about-link">
+            to="/about" replace className="nav-link about-link"
+            onMouseEnter={() => showCertBtn()}
+            onMouseLeave={() => hideCertBtn()}>
               <p>About</p>
+            </NavLink>
+
+            <NavLink
+            to="/certifications" replace className="nav-link cert-link">
+              <p>Certificates</p>
             </NavLink>
 
             <NavLink

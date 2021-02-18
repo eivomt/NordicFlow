@@ -3,8 +3,7 @@ import wepukoPahnkeLogo from '../supplier-logo/WepuhkoPahnke.png'
 import prominentLogo from '../supplier-logo/ProMinent.png'
 import eagleLogo from '../supplier-logo/Eagle.png'
 import pleugerLogo from '../supplier-logo/Pleuger.png'
-import pcmLogo from '../supplier-logo/PCM.png'
-import pcmLogo2 from '../supplier-logo/PCM2.png'
+import pcmLogo from '../supplier-logo/PCM2.png'
 
 let partnerArray = [
     {
@@ -43,7 +42,7 @@ let partnerArray = [
 
             "Available in horizontal or Vertical configuration as well as PCM Standard progressing cavity pumps"
         ],
-        logo : pcmLogo2,
+        logo : pcmLogo,
         website : "https://www.pcm.eu/en/oil-and-gas"
     },
 
