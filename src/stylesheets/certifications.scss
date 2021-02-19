@@ -113,6 +113,7 @@
             text-align: center;
             border-bottom: 1px solid $bg;
             transition: ease-in-out .2s;
+            cursor: pointer;
         }
 
         h4:hover {
@@ -132,24 +133,28 @@
 
 .cert-pdf-bg {
     position: fixed;
-    top: 0;
+    top: -100vh;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0);
     z-index: 8;
+    // pointer-events: none;
+    transition: ease-in-out .3s;
 }
 
-.cert-pdf-placeholder {
+.pdf-container {
     position: absolute;
-    top: -200vh;
-    left: 128px;
+    top: 106px;
+    left: -100vw;
     // height: calc(100vh - 106px - 44px);
     width: calc(100vw - 128px - 128px);
     height: 100vh;
     padding-left: 16.66%;
     padding-right: 16.66%;
     z-index: 9;
+    transition: left ease-in-out .5s;
+    pointer-events: none;
 
     .pdf {
         width: 100%;
@@ -160,9 +165,10 @@
 }
 
 .active-pdf {
-    top: 106px;
+    left: 128px;
 }
 
 .active-pdf-bg {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.5);
+    top: 0;
 }
